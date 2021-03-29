@@ -4,7 +4,7 @@ import json
 import base64
 import glob
 
-VIEWER_ROOT = '/viewer/images'
+VIEWER_ROOT = '/worm-cyoa-v6-fork/viewer/images'
 DEFAULT_OUTPUT_PATH = './viewer/'
 
 
