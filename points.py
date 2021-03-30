@@ -6,7 +6,6 @@ from dataclasses import dataclass
 from operator import attrgetter
 from typing import List, Dict, Optional, Generator, Set, OrderedDict
 from abc import ABC
-from graphviz import Digraph
 
 
 @dataclass
@@ -308,94 +307,6 @@ def print_graph(graph: Graph):
                 print(f"    Requirements: {repr(obj.requirements)}")
 
 
-def print_cycles(cycles: Dict[str, Component], graph: Graph):
-    all_cycles_set = set()
-
-    def build_cycles(head, stack: list):
-        if head in stack:
-            return {str.join('>', sorted(stack)), }
-        elif head in cycles:
-            return set(child
-                       for parent in cycles[head].outputs
-                       for child in build_cycles(parent, [*stack, head]))
-        else:
-            return set()
-
-    for head in cycles.keys():
-        all_cycles_set = all_cycles_set | build_cycles(head, [])
-
-    for cycle in all_cycles_set:
-        cycle_ids = str.split(cycle, '>')
-        cycle_objs = [graph.objects[oid] for oid in cycle_ids]
-        cycle_str = [f"{graph.rows[obj.row_id].title} / {obj.title}"
-                     for obj in cycle_objs]
-
-        print(str.join("; ", cycle_str))
-
-
-def render_graph(graph):
-    dot = Digraph(comment='Dependencies')
-
-    for key, vertex in graph.vertices.items():
-        if len(vertex.inputs) == 0 and len(vertex.outputs) == 0:
-            continue
-        
-        if obj := graph.objects.get(key):
-            row_name = graph.rows[obj.row_id].title
-            dot.node(obj.obj_id, f"{row_name} / {obj.title} [{obj.obj_id}]")
-        else:
-            dot.node(key, f"V-{key}")
-
-    for key, vertex in graph.vertices.items():
-        for parent in vertex.outputs:
-            dot.edge(key, parent)
-
-    dot = dot.unflatten(stagger=5)
-    dot.render('graph.gv')
-
-
-def render_components(graph: Graph, components: Dict[str, Component]):
-    dot = Digraph(comment='Dependencies', graph_attr={'overlap':'vspc'})
-
-    def add_node(dg, key):
-        vertex = graph.vertices[key]
-        if len(vertex.inputs) == 0 and len(vertex.outputs) == 0:
-            return
-        
-        if obj := graph.objects.get(key):
-            row_name = graph.rows[obj.row_id].title
-            dot.node(obj.obj_id, f"{row_name} / {obj.title} [{obj.obj_id}]")
-        else:
-            dot.node(key, f"V-{key}")
-
-    def unique_edges(component):
-        edges = set()
-
-        # External Edges
-        for src, dst in ((src, dst) for src in component.object_ids for dst in graph.vertices[src].outputs):
-            edges.add((src, dst))
-        
-        return edges
-
-    for key, component in components.items():
-        if len(component.object_ids) == 1:
-            add_node(dot, component.object_id)
-            for src, dst in unique_edges(component):
-                dot.edge(src, dst)
-        else:
-            sg = Digraph(f'cluster_{key}')
-            for key in component.object_ids:
-                add_node(sg, key)
-
-            for src, dst in unique_edges(component):
-                sg.edge(src, dst)
-
-            dot.subgraph(sg)
-
-    dot = dot.unflatten(stagger=10)
-    dot.render('components.gv')
-
-
 def run_stages(stages, choices, points):
     def cond_match(requirements, choices):
         if requirements is not None:
@@ -415,7 +326,7 @@ def run_stages(stages, choices, points):
                 print(f"Invalid Selection {obj_id} !")
 
         return points
-    
+
     for stage in stages:
         points = run_stage(stage, points)
 
@@ -427,29 +338,24 @@ if __name__ == '__main__':
         project = json.load(fd)
 
     graph = build_graph(project)
-    # print_graph(graph)
-    # render_graph(graph)
-
     components = find_strongly_connected_components(graph)
-    # render_components(graph, components)
-    
     sorted_deps, cycles = topological_sort(components)
+    
     if len(cycles) > 0:
         print("Has a cycle")
         print(cycles)
-    
-    stages = [
-        {n: graph.objects[n] for n in component.object_ids if n in graph.objects}
-        for component in (components[n] for n in sorted_deps)
-        if any(n in graph.objects for n in component.object_ids)
-    ]
-    
-    print(f"{len(stages)} stages")
-    
-    choices = {"8mhz", "1psq", "deasy", "iwf0", "1y99", "g124", "i7bw", "kht1", "myd7", "puxg", "fbcq", "gl7t", "imhz", "0s6z", "sxhj",
-               "hfao", "ar4o", "uh4g", "9mam", "4ech", "42jg", "87du", "w0ll", "eo3o", "akq3", "x88q", "pl4z", "xsyg", "6io0", "ui8c",
-               "h8sf", "5dyo", "hheh", "okhr", "vczo", "l64d", "0yio", "08it", "z4p4", "bpuq", "hzoj", "prfi", "qokx", "346g", "0mr3",
-               "ob4i", "9sto", "4jnj", "974r", "1irf", "q6x83", "4tfy", "1x0q"}
-    
-    run_stages(stages, choices, {pt.points_id: pt.starting_sum for pt in graph.point_types.values()})
-
+    else:
+        stages = [
+            {n: graph.objects[n] for n in component.object_ids if n in graph.objects}
+            for component in (components[n] for n in sorted_deps)
+            if any(n in graph.objects for n in component.object_ids)
+        ]
+        
+        print(f"{len(stages)} stages")
+        
+        choices = {"8mhz", "1psq", "deasy", "iwf0", "1y99", "g124", "i7bw", "kht1", "myd7", "puxg", "fbcq", "gl7t", "imhz", "0s6z", "sxhj",
+                "hfao", "ar4o", "uh4g", "9mam", "4ech", "42jg", "87du", "w0ll", "eo3o", "akq3", "x88q", "pl4z", "xsyg", "6io0", "ui8c",
+                "h8sf", "5dyo", "hheh", "okhr", "vczo", "l64d", "0yio", "08it", "z4p4", "bpuq", "hzoj", "prfi", "qokx", "346g", "0mr3",
+                "ob4i", "9sto", "4jnj", "974r", "1irf", "q6x83", "4tfy", "1x0q"}
+        
+        run_stages(stages, choices, {pt.points_id: pt.starting_sum for pt in graph.point_types.values()})
