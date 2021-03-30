@@ -1,11 +1,11 @@
 import itertools
 import json
 import hashlib
-from collections import defaultdict, OrderedDict
+from collections import defaultdict
 from dataclasses import dataclass
 from operator import attrgetter
-from typing import List, Dict, Optional, Generator, Set
-
+from typing import List, Dict, Optional, Generator, Set, OrderedDict
+from abc import ABC
 from graphviz import Digraph
 
 
@@ -17,18 +17,25 @@ class PointType:
 
 
 @dataclass
-class Condition:
-    pass
+class Condition(ABC):
+    def run(self, choices):
+        raise NotImplementedError
 
 
 @dataclass
 class TermCondition(Condition):
     data: dict
 
+    def run(self, choices):
+        return False
+
 
 @dataclass
 class RequiredCondition(Condition):
     object_id: str
+
+    def run(self, choices):
+        return self.object_id in choices
 
     def __repr__(self):
         return self.object_id
@@ -38,6 +45,9 @@ class RequiredCondition(Condition):
 class IncompatibleCondition(Condition):
     object_id: str
 
+    def run(self, choices):
+        return self.object_id not in choices
+
     def __repr__(self):
         return f"!{self.object_id}"
 
@@ -46,6 +56,9 @@ class IncompatibleCondition(Condition):
 class AndCondition(Condition):
     terms: List[Condition]
 
+    def run(self, choices):
+        return all(term.run(choices) for term in self.terms)
+
     def __repr__(self):
         return str.join(" && ", map(repr, self.terms))
 
@@ -53,6 +66,9 @@ class AndCondition(Condition):
 @dataclass
 class OrCondition(Condition):
     terms: List[Condition]
+
+    def run(self, choices):
+        return any(term.run(choices) for term in self.terms)
 
     def __repr__(self):
         return str.join(" || ", map(repr, self.terms))
@@ -114,9 +130,11 @@ class Graph:
                     yield from collect_condition_deps(score.requirements)
 
             for obj in objects:
-                for dep in collect_object_deps(obj):
-                    vertices[dep].outputs.add(obj.obj_id)
-                    vertices[obj.obj_id].inputs.add(dep)
+                vertices[obj.obj_id] = Vertex(set(), set())
+            
+            for oid, dep in ((obj.obj_id, dep) for obj in objects for dep in collect_object_deps(obj)):
+                vertices[dep].outputs.add(oid)
+                vertices[oid].inputs.add(dep)
 
             return vertices
 
@@ -124,6 +142,23 @@ class Graph:
             self._vertices = build_vertices(self.objects.values())
         
         return self._vertices
+
+
+@dataclass
+class Component:
+    component_id: str
+    object_ids: Set[str]
+    inputs: Set[str]
+    outputs: Set[str]
+
+    @property
+    def object_id(self):
+        return list(sorted(self.object_ids))[0]
+
+
+@dataclass
+class Stage:
+    objects: OrderedDict[str, RowObject]
 
 
 def build_graph(project_data):
@@ -149,7 +184,7 @@ def build_graph(project_data):
     def build_score(data) -> Score:
         return Score(
             points_id=data['id'],
-            value=data['value'],
+            value=int(data['value']),
             requirements=build_requirements(data['requireds'])
         )
 
@@ -178,18 +213,6 @@ def build_graph(project_data):
         point_types={data['id']: PointType(points_id=data['id'], name=data['name'], starting_sum=data['startingSum'])
                      for data in project_data['pointTypes']}
     )
-
-
-@dataclass
-class Component:
-    component_id: str
-    object_ids: Set[str]
-    inputs: Set[str]
-    outputs: Set[str]
-
-    @property
-    def object_id(self):
-        return list(sorted(self.object_ids))[0]
 
 
 def find_strongly_connected_components(graph: Graph):
@@ -330,6 +353,7 @@ def render_graph(graph):
     dot = dot.unflatten(stagger=5)
     dot.render('graph.gv')
 
+
 def render_components(graph: Graph, components: Dict[str, Component]):
     dot = Digraph(comment='Dependencies', graph_attr={'overlap':'vspc'})
 
@@ -372,24 +396,60 @@ def render_components(graph: Graph, components: Dict[str, Component]):
     dot.render('components.gv')
 
 
+def run_stages(stages, choices, points):
+    def cond_match(requirements, choices):
+        if requirements is not None:
+            return requirements.run(choices)
+        else:
+            return True
+
+    def run_stage(stage, points):
+        for obj_id, row_obj in ((oid, obj) for oid, obj in stage.items() if oid in choices):
+            if cond_match(row_obj.requirements, choices):
+                print(f"Selected {row_obj.title} / {obj_id}")
+                points = points | {
+                    points_id: points.get(points_id, 0) - sum(score.value for score in scores if cond_match(score.requirements, choices))
+                    for points_id, scores in itertools.groupby(sorted(row_obj.scores, key=attrgetter('points_id')), key=attrgetter('points_id'))
+                }
+            else:
+                print(f"Invalid Selection {obj_id} !")
+
+        return points
+    
+    for stage in stages:
+        points = run_stage(stage, points)
+
+    print(points)
+
+
 if __name__ == '__main__':
     with open('viewer/project.json', mode='r') as fd:
         project = json.load(fd)
 
     graph = build_graph(project)
-    print_graph(graph)
-    render_graph(graph)
+    # print_graph(graph)
+    # render_graph(graph)
 
     components = find_strongly_connected_components(graph)
-    render_components(graph, components)
-
+    # render_components(graph, components)
+    
     sorted_deps, cycles = topological_sort(components)
     if len(cycles) > 0:
         print("Has a cycle")
         print(cycles)
     
-    print(f"{len(sorted_deps)} stages")
-    for component in (components[n] for n in sorted_deps):
-        print(f"Stage {component.component_id}")
-        for row_object in (graph.objects[n] for n in component.object_ids if n in graph.objects):
-            print(f"  - [{row_object.obj_id}] {row_object.title}")
+    stages = [
+        {n: graph.objects[n] for n in component.object_ids if n in graph.objects}
+        for component in (components[n] for n in sorted_deps)
+        if any(n in graph.objects for n in component.object_ids)
+    ]
+    
+    print(f"{len(stages)} stages")
+    
+    choices = {"8mhz", "1psq", "deasy", "iwf0", "1y99", "g124", "i7bw", "kht1", "myd7", "puxg", "fbcq", "gl7t", "imhz", "0s6z", "sxhj",
+               "hfao", "ar4o", "uh4g", "9mam", "4ech", "42jg", "87du", "w0ll", "eo3o", "akq3", "x88q", "pl4z", "xsyg", "6io0", "ui8c",
+               "h8sf", "5dyo", "hheh", "okhr", "vczo", "l64d", "0yio", "08it", "z4p4", "bpuq", "hzoj", "prfi", "qokx", "346g", "0mr3",
+               "ob4i", "9sto", "4jnj", "974r", "1irf", "q6x83", "4tfy", "1x0q"}
+    
+    run_stages(stages, choices, {pt.points_id: pt.starting_sum for pt in graph.point_types.values()})
+
