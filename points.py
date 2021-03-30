@@ -1,9 +1,10 @@
 import itertools
 import json
-from collections import defaultdict
+import hashlib
+from collections import defaultdict, OrderedDict
 from dataclasses import dataclass
 from operator import attrgetter
-from typing import List, Dict, Optional, Generator
+from typing import List, Dict, Optional, Generator, Set
 
 from graphviz import Digraph
 
@@ -80,13 +81,49 @@ class RowData:
 
 
 @dataclass
+class Vertex:
+    inputs: Set[str]
+    outputs: Set[str]
+
+
+@dataclass
 class Graph:
     rows: Dict[str, RowData]
     objects: Dict[str, RowObject]
     point_types: Dict[str, PointType]
+    _vertices: Dict[str, Vertex] = None
 
     def objects_in_row(self, row_id):
         return sorted(filter(lambda item: item.row_id == row_id, self.objects.values()), key=attrgetter('obj_id'))
+
+    @property
+    def vertices(self):
+        def build_vertices(objects: List[RowObject]):
+            vertices = defaultdict(lambda: Vertex(set(), set()))
+
+            def collect_condition_deps(cond: Optional[Condition]):
+                if isinstance(cond, (AndCondition, OrCondition)):
+                    for item in cond.terms:
+                        yield from collect_condition_deps(item)
+                elif isinstance(cond, (RequiredCondition, IncompatibleCondition)):
+                    yield cond.object_id
+
+            def collect_object_deps(obj: RowObject):
+                yield from collect_condition_deps(obj.requirements)
+                for score in obj.scores:
+                    yield from collect_condition_deps(score.requirements)
+
+            for obj in objects:
+                for dep in collect_object_deps(obj):
+                    vertices[dep].outputs.add(obj.obj_id)
+                    vertices[obj.obj_id].inputs.add(dep)
+
+            return vertices
+
+        if self._vertices is None:
+            self._vertices = build_vertices(self.objects.values())
+        
+        return self._vertices
 
 
 def build_graph(project_data):
@@ -143,116 +180,96 @@ def build_graph(project_data):
     )
 
 
-def find_links(graph: Graph):
-    children = defaultdict(list)
-    parents = defaultdict(list)
+@dataclass
+class Component:
+    component_id: str
+    object_ids: Set[str]
+    inputs: Set[str]
+    outputs: Set[str]
 
-    def collect_condition_deps(cond: Optional[Condition]):
-        if isinstance(cond, (AndCondition, OrCondition)):
-            for item in cond.terms:
-                yield from collect_condition_deps(item)
-        elif isinstance(cond, (RequiredCondition, IncompatibleCondition)):
-            yield cond.object_id
-
-    def collect_object_deps(obj: RowObject):
-        yield from collect_condition_deps(obj.requirements)
-        for score in obj.scores:
-            yield from collect_condition_deps(score.requirements)
-
-    for obj in graph.objects.values():
-        for dep in collect_object_deps(obj):
-            children[dep].append(obj.obj_id)
-            parents[obj.obj_id].append(dep)
-
-    return children, parents
+    @property
+    def object_id(self):
+        return list(sorted(self.object_ids))[0]
 
 
-def find_strongly_connected_components(childen, parents, graph: Graph):
+def find_strongly_connected_components(graph: Graph):
+    "Tarjan's Algorithm"
     last_group_index = 0
     stack = []
     index = {}
     lowlink = {}
-    components = []
+    components = {}
+    component_ownership = {}
 
-    def strong_connect(vertex):
-        """
-        function strongconnect(v)
-            // Set the depth index for v to the smallest unused index
-            v.index := index
-            v.lowlink := index
-            index := index + 1
-            S.push(v)
-            v.onStack := true
-
-            // Consider successors of v
-            for each (v, w) in E do
-                if w.index is undefined then
-                    // Successor w has not yet been visited; recurse on it
-                    strongconnect(w)
-                    v.lowlink := min(v.lowlink, w.lowlink)
-                else if w.onStack then
-                    // Successor w is in stack S and hence in the current SCC
-                    // If w is not on stack, then (v, w) is an edge pointing to an SCC already found and must be ignored
-                    // Note: The next line may look odd - but is correct.
-                    // It says w.index not w.lowlink; that is deliberate and from the original paper
-                    v.lowlink := min(v.lowlink, w.index)
-                end if
-            end for
-
-            // If v is a root node, pop the stack and generate an SCC
-            if v.lowlink = v.index then
-                start a new strongly connected component
-                repeat
-                    w := S.pop()
-                    w.onStack := false
-                    add w to current strongly connected component
-                while w ≠ v
-                output the current strongly connected component
-            end if
-        end function
-        """
+    def strong_connect(key: str, vertex: Vertex):
         nonlocal last_group_index
 
-        index[vertex] = last_group_index
-        lowlink[vertex] = last_group_index
+        index[key] = last_group_index
+        lowlink[key] = last_group_index
         last_group_index += 1
-        stack.append(vertex)
+        stack.append(key)
 
-        for child in childen[vertex]:
-            if child not in lowlink:
-                strong_connect(child)
-                lowlink[vertex] = min(lowlink[vertex], lowlink[child])
-            elif child in stack:
-                lowlink[vertex] = min(lowlink[vertex], index[child])
+        for child_key in vertex.outputs:
+            if child_key not in lowlink:
+                strong_connect(child_key, graph.vertices[child_key])
+                lowlink[key] = min(lowlink[key], lowlink[child_key])
+            elif child_key in stack:
+                lowlink[key] = min(lowlink[key], index[child_key])
 
-        if index[vertex] == lowlink[vertex]:
-            component = []
-            while stack[-1] != vertex:
-                component.append(stack.pop())
-            component.append(stack.pop())
-            components.append(component)
+        if index[key] == lowlink[key]:
+            object_ids = set()
+            while stack[-1] != key:
+                object_ids.add(stack.pop())
+            object_ids.add(stack.pop())
 
-    for vertex in graph.objects.keys():
-        strong_connect(vertex)
+            component_id = hashlib.sha256(str.join(';', object_ids).encode('utf-8')).hexdigest()[0:6]
+            components[component_id] = Component(
+                component_id=component_id,
+                object_ids=object_ids,
+                inputs=set(),
+                outputs=set()
+            )
+            component_ownership.update({
+                oid: component_id for oid in object_ids
+            })
+
+    for key, vertex in graph.vertices.items():
+        if key not in index:
+            strong_connect(key, vertex)
+
+    # Build component connections
+    for key, component in components.items():
+        component.inputs = {
+            component_ownership[vertex]
+            for oid in component.object_ids
+            for vertex in graph.vertices[oid].inputs
+            if vertex not in component.object_ids
+        }
+        component.outputs = {
+            component_ownership[vertex]
+            for oid in component.object_ids
+            for vertex in graph.vertices[oid].outputs
+            if vertex not in component.object_ids
+        }
 
     return components
 
 
-def topological_sort(children: dict, parents: dict):
+def topological_sort(components: Dict[str, Component]):
     """Sort values subject to dependency constraints"""
-    num_heads = defaultdict(int)  # num arrows pointing in
-    for h, tt in parents.items():
-        num_heads[h] = len(tt)
+    num_heads = defaultdict(int) # num arrows pointing in
+    for key, component in components.items():
+        num_heads[key] = len(component.inputs)
 
-    ordered = [h for h in children if h not in num_heads]
-    for h in ordered:
-        for t in children[h]:
-            num_heads[t] -= 1
-            if not num_heads[t]:
-                ordered.append(t)
+    ordered = [key for key in components.keys() if num_heads[key] == 0]
+    for key in ordered:
+        for child in components[key].outputs:
+            num_heads[child] -= 1
+            if num_heads[child] == 0:
+                ordered.append(child)
 
-    cyclic = {n: parents[n] for n, heads in num_heads.items() if heads > 0}
-    return ordered, cyclic
+    cycles = {key: (components[key], heads) for key, heads in num_heads.items() if key not in ordered}
+    return ordered, cycles
 
 
 def print_graph(graph: Graph):
@@ -268,7 +285,7 @@ def print_graph(graph: Graph):
                 print(f"    Requirements: {repr(obj.requirements)}")
 
 
-def print_cycles(cycles: dict, graph: Graph):
+def print_cycles(cycles: Dict[str, Component], graph: Graph):
     all_cycles_set = set()
 
     def build_cycles(head, stack: list):
@@ -276,7 +293,7 @@ def print_cycles(cycles: dict, graph: Graph):
             return {str.join('>', sorted(stack)), }
         elif head in cycles:
             return set(child
-                       for parent in cycles[head]
+                       for parent in cycles[head].outputs
                        for child in build_cycles(parent, [*stack, head]))
         else:
             return set()
@@ -293,39 +310,86 @@ def print_cycles(cycles: dict, graph: Graph):
         print(str.join("; ", cycle_str))
 
 
-def render_graph(children, parents, graph):
+def render_graph(graph):
     dot = Digraph(comment='Dependencies')
 
-    for obj in graph.objects.values():
-        if len(children[obj.obj_id]) == 0 and len(parents[obj.obj_id]) == 0:
+    for key, vertex in graph.vertices.items():
+        if len(vertex.inputs) == 0 and len(vertex.outputs) == 0:
             continue
-        row_name = graph.rows[obj.row_id].title
-        dot.node(obj.obj_id, f"{row_name} / {obj.title} [{obj.obj_id}]")
+        
+        if obj := graph.objects.get(key):
+            row_name = graph.rows[obj.row_id].title
+            dot.node(obj.obj_id, f"{row_name} / {obj.title} [{obj.obj_id}]")
+        else:
+            dot.node(key, f"V-{key}")
 
-    for child, obj_parents in children.items():
-        for parent in obj_parents:
-            dot.edge(child, parent)
+    for key, vertex in graph.vertices.items():
+        for parent in vertex.outputs:
+            dot.edge(key, parent)
 
+    dot = dot.unflatten(stagger=5)
     dot.render('graph.gv')
+
+def render_components(graph: Graph, components: Dict[str, Component]):
+    dot = Digraph(comment='Dependencies', graph_attr={'overlap':'vspc'})
+
+    def add_node(dg, key):
+        vertex = graph.vertices[key]
+        if len(vertex.inputs) == 0 and len(vertex.outputs) == 0:
+            return
+        
+        if obj := graph.objects.get(key):
+            row_name = graph.rows[obj.row_id].title
+            dot.node(obj.obj_id, f"{row_name} / {obj.title} [{obj.obj_id}]")
+        else:
+            dot.node(key, f"V-{key}")
+
+    def unique_edges(component):
+        edges = set()
+
+        # External Edges
+        for src, dst in ((src, dst) for src in component.object_ids for dst in graph.vertices[src].outputs):
+            edges.add((src, dst))
+        
+        return edges
+
+    for key, component in components.items():
+        if len(component.object_ids) == 1:
+            add_node(dot, component.object_id)
+            for src, dst in unique_edges(component):
+                dot.edge(src, dst)
+        else:
+            sg = Digraph(f'cluster_{key}')
+            for key in component.object_ids:
+                add_node(sg, key)
+
+            for src, dst in unique_edges(component):
+                sg.edge(src, dst)
+
+            dot.subgraph(sg)
+
+    dot = dot.unflatten(stagger=10)
+    dot.render('components.gv')
 
 
 if __name__ == '__main__':
-    with open('project.json', mode='r') as fd:
+    with open('viewer/project.json', mode='r') as fd:
         project = json.load(fd)
 
     graph = build_graph(project)
     print_graph(graph)
+    render_graph(graph)
 
-    children, parents = find_links(graph)
-    render_graph(children, parents, graph)
+    components = find_strongly_connected_components(graph)
+    render_components(graph, components)
 
-    components = find_strongly_connected_components(children, parents, graph)
-
-    print(components)
-
-    sorted_deps, cycles = topological_sort(children, parents)
+    sorted_deps, cycles = topological_sort(components)
     if len(cycles) > 0:
         print("Has a cycle")
-        print_cycles(cycles, graph)
-    else:
-        print(sorted_deps)
+        print(cycles)
+    
+    print(f"{len(sorted_deps)} stages")
+    for component in (components[n] for n in sorted_deps):
+        print(f"Stage {component.component_id}")
+        for row_object in (graph.objects[n] for n in component.object_ids if n in graph.objects):
+            print(f"  - [{row_object.obj_id}] {row_object.title}")
