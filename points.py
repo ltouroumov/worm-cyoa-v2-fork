@@ -295,6 +295,12 @@ def topological_sort(components: Dict[str, Component]):
 
 
 def print_graph(graph: Graph):
+    def list_objects(req):
+        if isinstance(req, (RequiredCondition, IncompatibleCondition)):
+            yield req.object_id
+        elif isinstance(req, (AndCondition, OrCondition)):
+            yield from (r for term in req.terms for r in list_objects(term))
+
     for row in graph.rows.values():
         print(f"[{row.row_id}] {row.title}")
         for obj in graph.objects_in_row(row.row_id):
@@ -305,6 +311,11 @@ def print_graph(graph: Graph):
                 print(f"    Scores: {str.join(', ', scores_repr)}")
             if obj.requirements:
                 print(f"    Requirements: {repr(obj.requirements)}")
+
+            for req in list_objects(obj.requirements):
+                if req not in graph.objects:
+                    print(f"    Broken Link: {req}")
+
 
 
 def run_stages(stages, choices, points):
@@ -338,6 +349,7 @@ if __name__ == '__main__':
         project = json.load(fd)
 
     graph = build_graph(project)
+    print_graph(graph)
     components = find_strongly_connected_components(graph)
     sorted_deps, cycles = topological_sort(components)
     
