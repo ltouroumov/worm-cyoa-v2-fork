@@ -79,7 +79,7 @@ def main():
 
     print(f"Writing Project to {output_project}")
     with open(output_project, mode='w+') as fd:
-        json.dump(project, fd)
+        json.dump(project, fd, indent=2, sort_keys=True)
 
     print("Done")
 
