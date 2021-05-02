@@ -22825,6 +22825,7 @@
               "afterText": "SP",
               "beforeText": "Gain:",
               "id": "rm",
+              "isActive": false,
               "requireds": [],
               "showScore": true,
               "type": "",
@@ -22834,6 +22835,7 @@
               "afterText": "CP",
               "beforeText": "Cost:",
               "id": "2b",
+              "isActive": false,
               "requireds": [],
               "showScore": true,
               "type": "",
@@ -22861,6 +22863,7 @@
               "afterText": "SP",
               "beforeText": "Gain:",
               "id": "rm",
+              "isActive": false,
               "requireds": [],
               "showScore": true,
               "type": "",
@@ -22870,6 +22873,7 @@
               "afterText": "CP",
               "beforeText": "Cost:",
               "id": "2b",
+              "isActive": false,
               "requireds": [],
               "showScore": true,
               "type": "",
@@ -22897,6 +22901,7 @@
               "afterText": "SP",
               "beforeText": "Gain:",
               "id": "rm",
+              "isActive": false,
               "requireds": [],
               "showScore": true,
               "type": "",
@@ -22906,6 +22911,7 @@
               "afterText": "CP",
               "beforeText": "Cost:",
               "id": "2b",
+              "isActive": false,
               "requireds": [],
               "showScore": true,
               "type": "",
@@ -22933,6 +22939,7 @@
               "afterText": "SP",
               "beforeText": "Gain:",
               "id": "rm",
+              "isActive": false,
               "requireds": [],
               "showScore": true,
               "type": "",
@@ -22942,6 +22949,7 @@
               "afterText": "CP",
               "beforeText": "Cost:",
               "id": "2b",
+              "isActive": false,
               "requireds": [],
               "showScore": true,
               "type": "",
@@ -28068,6 +28076,7 @@
               "afterText": "SP",
               "beforeText": "Cost:",
               "id": "rm",
+              "isActive": false,
               "requireds": [],
               "showScore": true,
               "type": "",
@@ -28147,6 +28156,7 @@
               "afterText": "SP",
               "beforeText": "Cost:",
               "id": "rm",
+              "isActive": false,
               "requireds": [],
               "showScore": true,
               "type": "",
@@ -38059,7 +38069,7 @@
           "image": "",
           "isActive": false,
           "isVisible": true,
-          "objectWidth": "",
+          "objectWidth": "col-md-4",
           "requireds": [
             {
               "afterText": "",
@@ -38144,7 +38154,7 @@
           "image": "",
           "isActive": false,
           "isVisible": true,
-          "objectWidth": "",
+          "objectWidth": "col-md-4",
           "requireds": [
             {
               "afterText": "",
@@ -38230,7 +38240,7 @@
           "image": "",
           "isActive": false,
           "isVisible": true,
-          "objectWidth": "",
+          "objectWidth": "col-md-4",
           "requireds": [
             {
               "afterText": "",
@@ -38297,6 +38307,219 @@
           "template": 1,
           "text": "Your Arcanist, Artificer, and Alchemist synergize with Vision or Omniscience giving you access to more magic systems as well as the ability to design more. You spell types are no longer limited, you can now cast buffs, auras, etc. You enchantment cap is raised to five. With this, you can create truly powerful spells that could potentially destroy an Entity.",
           "title": "Archmage"
+        },
+        {
+          "addons": [
+            {
+              "id": "",
+              "image": "",
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "13z7",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "template": "",
+              "text": "If you chose Beautiful, Handsome, Androgynous, or Attractive you immediately have access to a human form that resembles your previous one, it will have bright colored hair that matches your slime form's color.\n\nIf you chose Average your only have your slime form, you can chose the color. Your slime form will look like a blob of colored Jello with no distinguishing features.\n\nIf you chose Ugly or Hideous your slime form will be repugnant to look at, instead of a uniform texture there will be bits of debris and remains floating within. Any human form you shapeshift into will be rendered uglier. Your slime form will also have a distinctive and unpleasant smell.\n\nIf you chose Deformed your slime form looks unhealthy, patches of discolored matter appear on your surface and float inside of you. Any human form you shapeshift into will have some form of deformation like burns, missing parts or look unhealthy in general. ",
+              "title": "Case 53"
+            }
+          ],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "a0gv",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "col-sm-6",
+          "requireds": [
+            {
+              "afterText": "",
+              "beforeText": "Required:",
+              "id": "",
+              "operator": "",
+              "orRequired": [
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                }
+              ],
+              "reqId": "j84x",
+              "reqId1": "",
+              "reqId2": "",
+              "reqId3": "",
+              "reqPoints": 0,
+              "required": true,
+              "requireds": [],
+              "showRequired": true,
+              "type": "id"
+            },
+            {
+              "afterText": "",
+              "beforeText": "Required:",
+              "id": "",
+              "operator": "",
+              "orRequired": [
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                }
+              ],
+              "reqId": "985a",
+              "reqId1": "",
+              "reqId2": "",
+              "reqId3": "",
+              "reqPoints": 0,
+              "required": true,
+              "requireds": [],
+              "showRequired": true,
+              "type": "id"
+            },
+            {
+              "afterText": "",
+              "beforeText": "Required:",
+              "id": "",
+              "operator": "",
+              "orRequired": [
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                }
+              ],
+              "reqId": "g4y9",
+              "reqId1": "",
+              "reqId2": "",
+              "reqId3": "",
+              "reqPoints": 0,
+              "required": true,
+              "requireds": [],
+              "showRequired": true,
+              "type": "id"
+            },
+            {
+              "afterText": "",
+              "beforeText": "Required:",
+              "id": "",
+              "operator": "",
+              "orRequired": [
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                }
+              ],
+              "reqId": "64z4",
+              "reqId1": "",
+              "reqId2": "",
+              "reqId3": "",
+              "reqPoints": 0,
+              "required": true,
+              "requireds": [],
+              "showRequired": true,
+              "type": "id"
+            },
+            {
+              "afterText": "",
+              "beforeText": "Required:",
+              "id": "",
+              "operator": "",
+              "orRequired": [
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                }
+              ],
+              "reqId": "g2oz",
+              "reqId1": "",
+              "reqId2": "",
+              "reqId3": "",
+              "reqPoints": 0,
+              "required": true,
+              "requireds": [],
+              "showRequired": true,
+              "type": "id"
+            }
+          ],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "isActive": false,
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "10"
+            }
+          ],
+          "template": 1,
+          "text": "Your slime form evolves to a new level. You lose access to the individual powers and instead your form gains two new powers.\n\n<b>Omniscience</b>, evolves and assists the host with a variety of functions.\n<i>Virtual Intelligence</i>The Shard interacts with the host as a disembodied emotionless voice and can also project complex information directly into the host's mind if necessary. At first, the virtual intelligence will only answer when interacted with but will over time learn from its host and interject when it deems it necessary. The stronger the bond between the Shard and the Host becomes the better the intelligence becomes and might even anticipate the Host's needs at times.\n<i>Appraisal</i> allows the host to obtain information about a targeted object, being, or phenomenon. The target must be visible to the user to be appraised.\n<i>Knowledge</i> allows the user to access the Shard's knowledge about the world.\n\n<b>Predator</b> unlocks the Slime form's full potential with a number of abilities.\n<i>Stomach</i> provides a pocket of storage for materials absorbed and extraneous mass. <i>Quarantine</i> is a section of the stomach reserved for harmful or waste materials that will be destroyed and converted into extra mass and energy.\n<i>Predation</i> allows the user to absorb an object or being into themselves, it is easier to absorb inanimate objects or unconscious beings than conscious ones unless the size difference is great enough. You can release beings that you have absorbed into yourself unharmed if you choose to, however it does not prevent them from being traumatized by the experience.\n<i>Analysis</i> allows the use of Appraisal to analyze absorbed objects and <i>Mimicry</i> allows the reproduction of analyzed objects, for beings it allows the host to mimic their form or attributes (as long as sufficient mass is available in storage) or reproduce the objects (as long as the appropriate base materials are available). Mimicry allows shapeshifting into any analyzed shape and even mix-and-match components of multiple shapes. You cannot reproduce powers of the things you mimic without a copy-based Trump power unless the power is entirely derived from biology.",
+          "title": "Reincarnated as a Slime"
         }
       ],
       "requireds": [
