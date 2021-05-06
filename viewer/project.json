@@ -33375,7 +33375,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "6"
+              "value": "3"
             }
           ],
           "template": 1,
@@ -33572,7 +33572,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "6"
+              "value": "3"
             }
           ],
           "template": 1,
@@ -33775,7 +33775,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "6"
+              "value": "3"
             }
           ],
           "template": 1,
@@ -36130,7 +36130,7 @@
       "id": "qldk",
       "image": "",
       "isButtonRow": false,
-      "isEditModeOn": true,
+      "isEditModeOn": false,
       "isInfoRow": false,
       "isPrivateStyling": false,
       "isRequirementOpen": false,
@@ -38512,7 +38512,7 @@
             }
           ],
           "template": 1,
-          "text": "Your slime form evolves to a new level. You lose access to the individual powers and instead your form gains two new powers.\n\n<b>Omniscience</b>, evolves and assists the host with a variety of functions.\n<i>Virtual Intelligence</i>The Shard interacts with the host as a disembodied emotionless voice and can also project complex information directly into the host's mind if necessary. At first, the virtual intelligence will only answer when interacted with but will over time learn from its host and interject when it deems it necessary. The stronger the bond between the Shard and the Host becomes the better the intelligence becomes and might even anticipate the Host's needs at times.\n<i>Appraisal</i> allows the host to obtain information about a targeted object, being, or phenomenon. The target must be visible to the user to be appraised.\n<i>Knowledge</i> allows the user to access the Shard's knowledge about the world.\n\n<b>Predator</b> unlocks the Slime form's full potential with a number of abilities.\n<i>Stomach</i> provides a pocket of storage for materials absorbed and extraneous mass. <i>Quarantine</i> is a section of the stomach reserved for harmful or waste materials that will be destroyed and converted into extra mass and energy.\n<i>Predation</i> allows the user to absorb an object or being into themselves, it is easier to absorb inanimate objects or unconscious beings than conscious ones unless the size difference is great enough. You can release beings that you have absorbed into yourself unharmed if you choose to, however it does not prevent them from being traumatized by the experience.\n<i>Analysis</i> allows the use of Appraisal to analyze absorbed objects and <i>Mimicry</i> allows the reproduction of analyzed objects, for beings it allows the host to mimic their form or attributes (as long as sufficient mass is available in storage) or reproduce the objects (as long as the appropriate base materials are available). Mimicry allows shapeshifting into any analyzed shape and even mix-and-match components of multiple shapes. You can reproduce the powers of the things you mimic if they are entirely derived from biology. You can also mimic up to 3 Shard powers from Parahumans you have analyzed. If you have a Tinker power, you can build objects with Mimicry if you have the requisite base materials or components in your stomach.",
+          "text": "Your slime form evolves to a new level. Your body is now composed of homogeneous cells that can adapt to any tasks required. You lose access to the individual powers and instead your form gains new powers.\n\nYour body keeps it's resistance to all forms of sickness, poison, heat, radiation, electricity, and acid from <i>Immune Response</i>. You also do not feel pain anymore due to the nature of your physiology and gain a degree of resistance to physical attacks.\n\n<b>Omniscience</b>, evolves and assists the host with a variety of functions.\n<i>Virtual Intelligence</i>The Shard interacts with the host as a disembodied emotionless voice and can also project complex information directly into the host's mind if necessary. At first, the virtual intelligence will only answer when interacted with but will over time learn from its host and interject when it deems it necessary. The stronger the bond between the Shard and the Host becomes the better the intelligence becomes and might even anticipate the Host's needs at times.\n<i>Appraisal</i> allows the host to obtain information about a targeted object, being, or phenomenon. The target must be visible to the user to be appraised.\n<i>Knowledge</i> allows the user to access the Shard's knowledge about the world.\n\n<b>Predator</b> unlocks the Slime form's full potential with a number of abilities.\n<i>Stomach</i> provides a pocket of storage for materials absorbed and extraneous mass. <i>Quarantine</i> is a section of the stomach reserved for harmful or waste materials that will be destroyed and converted into extra mass and energy.\n<i>Predation</i> allows the user to absorb an object or being into themselves, it is easier to absorb inanimate objects or unconscious beings than conscious ones unless the size difference is great enough. You can release beings that you have absorbed into yourself unharmed if you choose to, however it does not prevent them from being traumatized by the experience.\n<i>Analysis</i> allows the use of Appraisal to analyze absorbed objects and <i>Mimicry</i> allows the reproduction of analyzed objects, for beings it allows the host to mimic their form or attributes (as long as sufficient mass is available in storage) or reproduce the objects (as long as the appropriate base materials are available). Mimicry allows shapeshifting into any analyzed shape and even mix-and-match components of multiple shapes. You can reproduce the powers of the things you mimic if they are entirely derived from biology. You can also mimic up to 3 Shard powers from Parahumans you have analyzed. If you have a Tinker power, you can build objects with Mimicry if you have the requisite base materials or components in your stomach.",
           "title": "Reincarnated as a Slime"
         }
       ],
