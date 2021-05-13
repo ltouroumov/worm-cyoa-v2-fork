@@ -30523,32 +30523,6 @@
           "defaultAspectHeight": 1,
           "defaultAspectWidth": 1,
           "groups": [],
-          "id": "cpi7",
-          "image": "",
-          "isActive": false,
-          "isVisible": true,
-          "objectWidth": "",
-          "requireds": [],
-          "scores": [
-            {
-              "afterText": "SP",
-              "beforeText": "Cost:",
-              "id": "rm",
-              "requireds": [],
-              "showScore": true,
-              "type": "",
-              "value": "20"
-            }
-          ],
-          "template": 1,
-          "text": "You can set yourself into a time loop whenever you want. You can set the start and end time of the loop, and if you die the loop restarts. You can not set the start of the loop earlier than the time the loop was created. This power has no blindspots.",
-          "title": "(Thinker) Time-Loop"
-        },
-        {
-          "addons": [],
-          "defaultAspectHeight": 1,
-          "defaultAspectWidth": 1,
-          "groups": [],
           "id": "137x",
           "image": "",
           "isActive": false,
@@ -30596,6 +30570,33 @@
           "template": 1,
           "text": "You have Eidolon's powers without the worthy opponent issue. You can have three somewhat-random powers that you can change at any time you want. These powers can be very powerful. You can switch out quality for quantity and have five weaker powers instead of three stronger ones. All powers take a couple of minutes to build up strength,though they're still usable before reaching full strength. You can still run out of energy with this power. You're a precognitive blindspot to everyone but the entity.",
           "title": "(Trump) Eidolon"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "i646",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "isActive": false,
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "15"
+            }
+          ],
+          "template": 1,
+          "text": "This power is the conceptual mirror to Eidolon, while he can have three strong powers, you can have 20-30 weak powers.\n\nYou have a total of 75 points to allocate to your powers. A single power cannot exceed 5 points. A power's point worth is roughly proportional to its potency which is roughly equal to it's rating plus one ('Thinker 0' costs 1 point, 'Blaster 4' costs 5 points, etc.). Powers with hybrid rating ('Mover/Stranger 3' or 'Mover 3, Stranger 1') tend to be rated higher than simple abilities but less than the sum of their parts. You cannot summon duplicate powers or powers too close to an existing power. Tinker and Trump powers have their own, stricter, summoning rules (left to the author).\n\nIt takes up to 90 seconds to summon a power and decreases exponentially for weaker powers. If a power is invalid (too powerful) the summon will fail once it reaches the maximum time. You can recall previously summoned powers for a fraction of the initial time and a multitasking power allows you to recall multiple at once. You can dismiss any power instantly. All effects dependent on those powers will stop when the ability is dismissed but lingering or permanent effects remain (like Tinkertech or body-alterations).\n\nNegentropy increases your point capacity to 125 and maximum points per power to 7.",
+          "title": "(Trump) Aliena"
         },
         {
           "addons": [],
@@ -30761,12 +30762,38 @@
           "defaultAspectHeight": 1,
           "defaultAspectWidth": 1,
           "groups": [],
+          "id": "cpi7",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "20"
+            }
+          ],
+          "template": 1,
+          "text": "You can set yourself into a time loop whenever you want. You can set the start and end time of the loop, and if you die the loop restarts. You can not set the start of the loop earlier than the time the loop was created. This power has no blindspots.",
+          "title": "(Thinker) Time-Loop"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
           "id": "5dyo",
           "image": "",
           "isActive": false,
           "isVisible": true,
           "multipleUseVariable": 0,
-          "objectWidth": "col-sm-6",
+          "objectWidth": "",
           "requireds": [],
           "scores": [
             {
@@ -30794,7 +30821,7 @@
           "isActive": false,
           "isVisible": true,
           "multipleUseVariable": 0,
-          "objectWidth": "col-sm-6",
+          "objectWidth": "",
           "requireds": [],
           "scores": [
             {
