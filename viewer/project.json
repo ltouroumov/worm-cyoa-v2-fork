@@ -27026,6 +27026,7 @@
               "afterText": "SP",
               "beforeText": "Cost:",
               "id": "rm",
+              "isActive": false,
               "requireds": [],
               "showScore": true,
               "type": "",
@@ -33489,7 +33490,7 @@
       "id": "wy6p",
       "image": "",
       "isButtonRow": false,
-      "isEditModeOn": false,
+      "isEditModeOn": true,
       "isInfoRow": false,
       "isPrivateStyling": false,
       "isRequirementOpen": false,
@@ -33674,7 +33675,7 @@
           "isActive": false,
           "isVisible": true,
           "multipleUseVariable": 0,
-          "objectWidth": "col-md-4",
+          "objectWidth": "",
           "requireds": [
             {
               "afterText": "",
@@ -33732,7 +33733,7 @@
           "isActive": false,
           "isVisible": true,
           "multipleUseVariable": 0,
-          "objectWidth": "col-md-4",
+          "objectWidth": "",
           "requireds": [
             {
               "afterText": "",
@@ -33916,8 +33917,211 @@
             }
           ],
           "template": 1,
-          "text": "You enchantment power can be used on your dolls to grant them powers.",
+          "text": "Your enchantment power can be used on your dolls to grant them powers.\n\n(A particular doll can only use either Recipient, Aliena, or Prototype powers)",
           "title": "Recipient"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "qodk",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [
+            {
+              "afterText": "choice",
+              "beforeText": "Required:",
+              "id": "",
+              "operator": "",
+              "orRequired": [
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                }
+              ],
+              "reqId": "yl17",
+              "reqId1": "",
+              "reqId2": "",
+              "reqId3": "",
+              "reqPoints": 0,
+              "required": false,
+              "requireds": [],
+              "showRequired": false,
+              "type": "id"
+            },
+            {
+              "afterText": "choice",
+              "beforeText": "Required:",
+              "id": "",
+              "operator": "",
+              "orRequired": [
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                }
+              ],
+              "reqId": "3wgp",
+              "reqId1": "",
+              "reqId2": "",
+              "reqId3": "",
+              "reqPoints": 0,
+              "required": false,
+              "requireds": [],
+              "showRequired": false,
+              "type": "id"
+            },
+            {
+              "afterText": "choice",
+              "beforeText": "Required:",
+              "id": "",
+              "operator": "",
+              "orRequired": [
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                }
+              ],
+              "reqId": "bwr1",
+              "reqId1": "",
+              "reqId2": "",
+              "reqId3": "",
+              "reqPoints": 0,
+              "required": false,
+              "requireds": [],
+              "showRequired": false,
+              "type": "id"
+            },
+            {
+              "afterText": "choice",
+              "beforeText": "Required:",
+              "id": "",
+              "operator": "",
+              "orRequired": [
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                }
+              ],
+              "reqId": "9dts",
+              "reqId1": "",
+              "reqId2": "",
+              "reqId3": "",
+              "reqPoints": 0,
+              "required": false,
+              "requireds": [],
+              "showRequired": false,
+              "type": "id"
+            },
+            {
+              "afterText": "choice",
+              "beforeText": "Required:",
+              "id": "",
+              "operator": "",
+              "orRequired": [
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                }
+              ],
+              "reqId": "5e30",
+              "reqId1": "",
+              "reqId2": "",
+              "reqId3": "",
+              "reqPoints": 0,
+              "required": false,
+              "requireds": [],
+              "showRequired": false,
+              "type": "id"
+            },
+            {
+              "afterText": "",
+              "beforeText": "Required:",
+              "id": "",
+              "operator": "",
+              "orRequired": [
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                }
+              ],
+              "reqId": "i646",
+              "reqId1": "",
+              "reqId2": "",
+              "reqId3": "",
+              "reqPoints": 0,
+              "required": true,
+              "requireds": [],
+              "showRequired": true,
+              "type": "id"
+            }
+          ],
+          "scores": [
+            {
+              "afterText": "DP",
+              "beforeText": "Cost:",
+              "id": "d2",
+              "isActive": false,
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "3"
+            }
+          ],
+          "template": 1,
+          "text": "Your dolls each have 25 points to load powers into. You must already have summoned these powers for yourself to use them in your dolls.\n\n(A particular doll can only use either Recipient, Aliena, or Prototype powers)",
+          "title": "Aliena Slots"
         },
         {
           "addons": [],
@@ -33929,7 +34133,7 @@
           "isActive": false,
           "isVisible": true,
           "multipleUseVariable": 0,
-          "objectWidth": "col-md-4",
+          "objectWidth": "",
           "requireds": [
             {
               "afterText": "choice",
@@ -34119,7 +34323,7 @@
             }
           ],
           "template": 1,
-          "text": "Your dolls each have 3 pattern slots, you can load patterns from Prototype into theses slots. Active use of these powers will not drain your battery.",
+          "text": "Your dolls each have 3 pattern slots, you can load patterns from Prototype into theses slots. Active use of these powers will not drain your battery.\n\n(A particular doll can only use either Recipient, Aliena, or Prototype powers)",
           "title": "Prototype Slots"
         },
         {
@@ -36470,7 +36674,7 @@
       "id": "qldk",
       "image": "",
       "isButtonRow": false,
-      "isEditModeOn": true,
+      "isEditModeOn": false,
       "isInfoRow": false,
       "isPrivateStyling": false,
       "isRequirementOpen": false,
