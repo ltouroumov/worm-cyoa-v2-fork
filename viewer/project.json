@@ -23571,7 +23571,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "25"
+              "value": "15"
             }
           ],
           "template": 1,
@@ -39676,6 +39676,7 @@
               "afterText": "CP",
               "beforeText": "Cost:",
               "id": "2b",
+              "isActive": false,
               "requireds": [],
               "showScore": true,
               "type": "",
@@ -40103,6 +40104,7 @@
               "afterText": "CP",
               "beforeText": "Cost:",
               "id": "2b",
+              "isActive": false,
               "requireds": [],
               "showScore": true,
               "type": "",
@@ -40341,6 +40343,7 @@
               "afterText": "CP",
               "beforeText": "Cost:",
               "id": "2b",
+              "isActive": false,
               "requireds": [],
               "showScore": true,
               "type": "",
@@ -40371,7 +40374,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "4"
+              "value": "5"
             }
           ],
           "template": 1,
@@ -40449,6 +40452,7 @@
               "afterText": "CP",
               "beforeText": "Cost:",
               "id": "2b",
+              "isActive": false,
               "requireds": [],
               "showScore": true,
               "type": "",
@@ -40557,6 +40561,7 @@
               "afterText": "CP",
               "beforeText": "Cost:",
               "id": "2b",
+              "isActive": false,
               "requireds": [],
               "showScore": true,
               "type": "",
@@ -40595,7 +40600,7 @@
             }
           ],
           "template": 1,
-          "text": "A bunch of various Tinkertech devices for many different purposes, including plain ray-guns, detectors, radars, lockpicks, and so on. User manuals included.",
+          "text": "A bunch of various Tinkertech devices for many different purposes, including detectors, radars, lockpicks, and so on. User manuals included.\n\n(Does not include weapons)",
           "title": "Tinkertech"
         },
         {
@@ -40646,10 +40651,11 @@
               "afterText": "CP",
               "beforeText": "Cost:",
               "id": "2b",
+              "isActive": false,
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "1"
+              "value": "2"
             }
           ],
           "template": 1,
@@ -40696,6 +40702,7 @@
           "isVisible": true,
           "multipleUseVariable": 0,
           "numMultipleTimesMinus": "0",
+          "numMultipleTimesPluss": "100",
           "objectWidth": "",
           "requireds": [],
           "scores": [
