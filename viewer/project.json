@@ -15682,7 +15682,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "20"
+              "value": "5"
             },
             {
               "afterText": "CP",
@@ -15692,7 +15692,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "10"
+              "value": "5"
             }
           ],
           "template": 1,
@@ -15868,7 +15868,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "20"
+              "value": "5"
             },
             {
               "afterText": "CP",
@@ -15877,7 +15877,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "10"
+              "value": "5"
             }
           ],
           "template": 1,
@@ -18838,7 +18838,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "-2"
+              "value": "-5"
             },
             {
               "afterText": "CP",
@@ -18940,7 +18940,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "-2"
+              "value": "-5"
             },
             {
               "afterText": "CP",
@@ -18950,7 +18950,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "-6"
+              "value": "-5"
             }
           ],
           "template": 1,
@@ -19470,7 +19470,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "-3"
+              "value": "-5"
             },
             {
               "afterText": "CP",
@@ -19480,7 +19480,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "-8"
+              "value": "-10"
             }
           ],
           "template": 1,
@@ -20678,7 +20678,7 @@
             }
           ],
           "template": 1,
-          "text": "You must follow any order given to you by authorities, regardless of if you agree with them. If a despot were to seize control of the government, you would be obligated to obey and enforce the rules that individual set in place, no matter how ruthless.",
+          "text": "You will follow the orders given to you by your superiors unless they are in direct contradiction to your alignment. (For example you would not obey the order to execute an innocent civilian if you were Lawful Good).\n\nIf a despot were to seize power through legal means like an election you would be more inclined to follow the orders of the new government than if they seized power through a violent coup.",
           "title": "Just Following Orders"
         },
         {
@@ -20966,8 +20966,8 @@
             }
           ],
           "template": 1,
-          "text": "You believe that the ends justify the means, no matter how horrific the means are. This alienates everyone who is less extreme and makes nearly impossible to form social connections with others. On the bright side, you'd fit right in at Cauldron.",
-          "title": "Utilitarian"
+          "text": "You have a pragmatist mindset. Your plans and solutions do not always take into account the human factor or the PR angle. Your alignment still influences your plans. This makes working in a team somewhat difficult if the other members are less pragmatic than you, it depends on if you are ready to compromise and accept the opinion of others or follow their plans.",
+          "title": "Pragmatist"
         },
         {
           "addons": [],
@@ -21254,7 +21254,7 @@
             }
           ],
           "template": 1,
-          "text": "You are unable to work with others in a meaningful way for any extended period of time. Any team you join will inevitably either fall apart or kick you out. You must be genuinely attempting to work with the team for this to take effect, so no joining a gang with the intent of having them fall apart.",
+          "text": "You are unable to work with others in a meaningful way for any extended period of time unless you really put the effort in. Any team you join will inevitably either fall apart or kick you out. You must be genuinely attempting to work with the team for this to take effect, so no joining a gang with the intent of having them fall apart.",
           "title": "Personality Conflict"
         },
         {
@@ -21273,11 +21273,328 @@
           "multipleUseVariable": 0,
           "numMultipleTimesMinus": "0",
           "numMultipleTimesPluss": "3",
-          "objectWidth": "col-md-4",
+          "objectWidth": "col-sm-6",
           "requireds": [
             {
               "afterText": "",
-              "beforeText": "Required:",
+              "beforeText": "Incompatible:",
+              "id": "",
+              "operator": "",
+              "orRequired": [
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                }
+              ],
+              "reqId": "i7bw",
+              "reqId1": "",
+              "reqId2": "",
+              "reqId3": "",
+              "reqPoints": 0,
+              "required": false,
+              "requireds": [],
+              "showRequired": true,
+              "type": "id"
+            },
+            {
+              "afterText": "",
+              "beforeText": "Incompatible:",
+              "id": "",
+              "operator": "",
+              "orRequired": [
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                }
+              ],
+              "reqId": "ns0e",
+              "reqId1": "",
+              "reqId2": "",
+              "reqId3": "",
+              "reqPoints": 0,
+              "required": false,
+              "requireds": [],
+              "showRequired": true,
+              "type": "id"
+            }
+          ],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Gain:",
+              "id": "rm",
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "dstd",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "-10"
+            },
+            {
+              "afterText": "CP",
+              "beforeText": "Gain:",
+              "id": "2b",
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "dstd",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "-5"
+            },
+            {
+              "afterText": "SP",
+              "beforeText": "Gain:",
+              "id": "rm",
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "deasy",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "-15"
+            },
+            {
+              "afterText": "CP",
+              "beforeText": "Gain:",
+              "id": "2b",
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "deasy",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "-10"
+            },
+            {
+              "afterText": "SP",
+              "beforeText": "Gain:",
+              "id": "rm",
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "dhard",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "-5"
+            },
+            {
+              "afterText": "CP",
+              "beforeText": "Gain:",
+              "id": "2b",
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "dhard",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "-5"
+            }
+          ],
+          "template": 1,
+          "text": "You must always try for a peaceful resolution before subduing an opponent by force. Your attempt at a peaceful resolution must be a true attempt, but can be done in a simulation or have been undone by time travel. The resolution attempt should be proportional to the situation, you are not expected to solve a random ganger's family problems before arresting him for armed robbery. ",
+          "title": "Mercy"
+        },
+        {
+          "addons": [],
+          "deactivateOtherChoice": false,
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "ns0e",
+          "image": "",
+          "isActive": false,
+          "isMultipleUseVariable": false,
+          "isSelectableMultiple": false,
+          "isVisible": true,
+          "multipleScoreId": "vp",
+          "multipleUseVariable": 0,
+          "numMultipleTimesMinus": "0",
+          "numMultipleTimesPluss": "3",
+          "objectWidth": "col-sm-6",
+          "requireds": [
+            {
+              "afterText": "",
+              "beforeText": "Incompatible:",
               "id": "",
               "operator": "",
               "orRequired": [
@@ -21299,273 +21616,14 @@
               "reqId2": "",
               "reqId3": "",
               "reqPoints": 0,
-              "required": true,
+              "required": false,
               "requireds": [],
               "showRequired": true,
               "type": "id"
-            }
-          ],
-          "scores": [
-            {
-              "afterText": "SP",
-              "beforeText": "Gain:",
-              "id": "rm",
-              "requireds": [
-                {
-                  "afterText": "choice",
-                  "beforeText": "Required:",
-                  "id": "",
-                  "operator": "",
-                  "orRequired": [
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    }
-                  ],
-                  "reqId": "dstd",
-                  "reqId1": "",
-                  "reqId2": "",
-                  "reqId3": "",
-                  "reqPoints": 0,
-                  "required": true,
-                  "requireds": [],
-                  "showRequired": false,
-                  "type": "id"
-                }
-              ],
-              "showScore": true,
-              "type": "",
-              "value": "-10"
             },
-            {
-              "afterText": "CP",
-              "beforeText": "Gain:",
-              "id": "2b",
-              "requireds": [
-                {
-                  "afterText": "choice",
-                  "beforeText": "Required:",
-                  "id": "",
-                  "operator": "",
-                  "orRequired": [
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    }
-                  ],
-                  "reqId": "dstd",
-                  "reqId1": "",
-                  "reqId2": "",
-                  "reqId3": "",
-                  "reqPoints": 0,
-                  "required": true,
-                  "requireds": [],
-                  "showRequired": false,
-                  "type": "id"
-                }
-              ],
-              "showScore": true,
-              "type": "",
-              "value": "-5"
-            },
-            {
-              "afterText": "SP",
-              "beforeText": "Gain:",
-              "id": "rm",
-              "requireds": [
-                {
-                  "afterText": "choice",
-                  "beforeText": "Required:",
-                  "id": "",
-                  "operator": "",
-                  "orRequired": [
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    }
-                  ],
-                  "reqId": "deasy",
-                  "reqId1": "",
-                  "reqId2": "",
-                  "reqId3": "",
-                  "reqPoints": 0,
-                  "required": true,
-                  "requireds": [],
-                  "showRequired": false,
-                  "type": "id"
-                }
-              ],
-              "showScore": true,
-              "type": "",
-              "value": "-15"
-            },
-            {
-              "afterText": "CP",
-              "beforeText": "Gain:",
-              "id": "2b",
-              "requireds": [
-                {
-                  "afterText": "choice",
-                  "beforeText": "Required:",
-                  "id": "",
-                  "operator": "",
-                  "orRequired": [
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    }
-                  ],
-                  "reqId": "deasy",
-                  "reqId1": "",
-                  "reqId2": "",
-                  "reqId3": "",
-                  "reqPoints": 0,
-                  "required": true,
-                  "requireds": [],
-                  "showRequired": false,
-                  "type": "id"
-                }
-              ],
-              "showScore": true,
-              "type": "",
-              "value": "-10"
-            },
-            {
-              "afterText": "SP",
-              "beforeText": "Gain:",
-              "id": "rm",
-              "requireds": [
-                {
-                  "afterText": "choice",
-                  "beforeText": "Required:",
-                  "id": "",
-                  "operator": "",
-                  "orRequired": [
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    }
-                  ],
-                  "reqId": "dhard",
-                  "reqId1": "",
-                  "reqId2": "",
-                  "reqId3": "",
-                  "reqPoints": 0,
-                  "required": true,
-                  "requireds": [],
-                  "showRequired": false,
-                  "type": "id"
-                }
-              ],
-              "showScore": true,
-              "type": "",
-              "value": "-5"
-            },
-            {
-              "afterText": "CP",
-              "beforeText": "Gain:",
-              "id": "2b",
-              "requireds": [
-                {
-                  "afterText": "choice",
-                  "beforeText": "Required:",
-                  "id": "",
-                  "operator": "",
-                  "orRequired": [
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    }
-                  ],
-                  "reqId": "dhard",
-                  "reqId1": "",
-                  "reqId2": "",
-                  "reqId3": "",
-                  "reqPoints": 0,
-                  "required": true,
-                  "requireds": [],
-                  "showRequired": false,
-                  "type": "id"
-                }
-              ],
-              "showScore": true,
-              "type": "",
-              "value": "-5"
-            }
-          ],
-          "template": 1,
-          "text": "You must always try for a peaceful resolution before subduing an opponent by force. Your attempt at a peaceful resolution must be a true attempt, but can be done in a simulation or have been undone by time travel.",
-          "title": "Mercy"
-        },
-        {
-          "addons": [],
-          "deactivateOtherChoice": false,
-          "defaultAspectHeight": 1,
-          "defaultAspectWidth": 1,
-          "groups": [],
-          "id": "6qlm",
-          "image": "",
-          "isActive": false,
-          "isMultipleUseVariable": false,
-          "isSelectableMultiple": false,
-          "isVisible": true,
-          "multipleScoreId": "vp",
-          "multipleUseVariable": 0,
-          "numMultipleTimesMinus": "0",
-          "numMultipleTimesPluss": "3",
-          "objectWidth": "col-md-4",
-          "requireds": [
             {
               "afterText": "",
-              "beforeText": "Required:",
+              "beforeText": "Incompatible:",
               "id": "",
               "operator": "",
               "orRequired": [
@@ -21582,300 +21640,12 @@
                   "req": ""
                 }
               ],
-              "reqId": "i7bw",
+              "reqId": "xs8e",
               "reqId1": "",
               "reqId2": "",
               "reqId3": "",
               "reqPoints": 0,
-              "required": true,
-              "requireds": [],
-              "showRequired": true,
-              "type": "id"
-            }
-          ],
-          "scores": [
-            {
-              "afterText": "SP",
-              "beforeText": "Gain:",
-              "id": "rm",
-              "requireds": [
-                {
-                  "afterText": "choice",
-                  "beforeText": "Required:",
-                  "id": "",
-                  "operator": "",
-                  "orRequired": [
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    }
-                  ],
-                  "reqId": "dstd",
-                  "reqId1": "",
-                  "reqId2": "",
-                  "reqId3": "",
-                  "reqPoints": 0,
-                  "required": true,
-                  "requireds": [],
-                  "showRequired": false,
-                  "type": "id"
-                }
-              ],
-              "showScore": true,
-              "type": "",
-              "value": "-10"
-            },
-            {
-              "afterText": "CP",
-              "beforeText": "Gain:",
-              "id": "2b",
-              "requireds": [
-                {
-                  "afterText": "choice",
-                  "beforeText": "Required:",
-                  "id": "",
-                  "operator": "",
-                  "orRequired": [
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    }
-                  ],
-                  "reqId": "dstd",
-                  "reqId1": "",
-                  "reqId2": "",
-                  "reqId3": "",
-                  "reqPoints": 0,
-                  "required": true,
-                  "requireds": [],
-                  "showRequired": false,
-                  "type": "id"
-                }
-              ],
-              "showScore": true,
-              "type": "",
-              "value": "-5"
-            },
-            {
-              "afterText": "SP",
-              "beforeText": "Gain:",
-              "id": "rm",
-              "requireds": [
-                {
-                  "afterText": "choice",
-                  "beforeText": "Required:",
-                  "id": "",
-                  "operator": "",
-                  "orRequired": [
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    }
-                  ],
-                  "reqId": "deasy",
-                  "reqId1": "",
-                  "reqId2": "",
-                  "reqId3": "",
-                  "reqPoints": 0,
-                  "required": true,
-                  "requireds": [],
-                  "showRequired": false,
-                  "type": "id"
-                }
-              ],
-              "showScore": true,
-              "type": "",
-              "value": "-15"
-            },
-            {
-              "afterText": "CP",
-              "beforeText": "Gain:",
-              "id": "2b",
-              "requireds": [
-                {
-                  "afterText": "choice",
-                  "beforeText": "Required:",
-                  "id": "",
-                  "operator": "",
-                  "orRequired": [
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    }
-                  ],
-                  "reqId": "deasy",
-                  "reqId1": "",
-                  "reqId2": "",
-                  "reqId3": "",
-                  "reqPoints": 0,
-                  "required": true,
-                  "requireds": [],
-                  "showRequired": false,
-                  "type": "id"
-                }
-              ],
-              "showScore": true,
-              "type": "",
-              "value": "-10"
-            },
-            {
-              "afterText": "SP",
-              "beforeText": "Gain:",
-              "id": "rm",
-              "requireds": [
-                {
-                  "afterText": "choice",
-                  "beforeText": "Required:",
-                  "id": "",
-                  "operator": "",
-                  "orRequired": [
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    }
-                  ],
-                  "reqId": "dhard",
-                  "reqId1": "",
-                  "reqId2": "",
-                  "reqId3": "",
-                  "reqPoints": 0,
-                  "required": true,
-                  "requireds": [],
-                  "showRequired": false,
-                  "type": "id"
-                }
-              ],
-              "showScore": true,
-              "type": "",
-              "value": "-5"
-            },
-            {
-              "afterText": "CP",
-              "beforeText": "Gain:",
-              "id": "2b",
-              "requireds": [
-                {
-                  "afterText": "choice",
-                  "beforeText": "Required:",
-                  "id": "",
-                  "operator": "",
-                  "orRequired": [
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    },
-                    {
-                      "req": ""
-                    }
-                  ],
-                  "reqId": "dhard",
-                  "reqId1": "",
-                  "reqId2": "",
-                  "reqId3": "",
-                  "reqPoints": 0,
-                  "required": true,
-                  "requireds": [],
-                  "showRequired": false,
-                  "type": "id"
-                }
-              ],
-              "showScore": true,
-              "type": "",
-              "value": "-5"
-            }
-          ],
-          "template": 1,
-          "text": "You find that you have a knack for pissing off people of other alignments. You find it nearly impossible to be friends with people who have a different alignment.",
-          "title": "Wanted"
-        },
-        {
-          "addons": [],
-          "deactivateOtherChoice": false,
-          "defaultAspectHeight": 1,
-          "defaultAspectWidth": 1,
-          "groups": [],
-          "id": "ns0e",
-          "image": "",
-          "isActive": false,
-          "isMultipleUseVariable": false,
-          "isSelectableMultiple": false,
-          "isVisible": true,
-          "multipleScoreId": "vp",
-          "multipleUseVariable": 0,
-          "numMultipleTimesMinus": "0",
-          "numMultipleTimesPluss": "3",
-          "objectWidth": "col-md-4",
-          "requireds": [
-            {
-              "afterText": "",
-              "beforeText": "Required:",
-              "id": "",
-              "operator": "",
-              "orRequired": [
-                {
-                  "req": ""
-                },
-                {
-                  "req": ""
-                },
-                {
-                  "req": ""
-                },
-                {
-                  "req": ""
-                }
-              ],
-              "reqId": "i7bw",
-              "reqId1": "",
-              "reqId2": "",
-              "reqId3": "",
-              "reqPoints": 0,
-              "required": true,
+              "required": false,
               "requireds": [],
               "showRequired": true,
               "type": "id"
@@ -22406,8 +22176,8 @@
             }
           ],
           "template": 1,
-          "text": "Congratulations, your social life is terminated. Almost everytime you go to a social outing while in your civilian identity something will come up that will ruin it, such as a villain attack.",
-          "title": "Parker Luck"
+          "text": "Your social life will suffer because of your Hero career. If you work for an organization, you'll be interrupted during your off-time for various \"urgent\" matters. Your candlelit dinner date might be interrupted by a villain attack or another emergency. None of the interruptions will put your secret identity at risk, if you have one, there will always be the opportunity to slip away discreetly or politely excuse yourself.",
+          "title": "Always on the clock"
         },
         {
           "addons": [],
