@@ -16286,7 +16286,7 @@
       "id": "pc8m",
       "image": "",
       "isButtonRow": false,
-      "isEditModeOn": false,
+      "isEditModeOn": true,
       "isInfoRow": false,
       "isPrivateStyling": false,
       "isRequirementOpen": false,
@@ -21294,7 +21294,7 @@
                   "req": ""
                 }
               ],
-              "reqId": "i7bw",
+              "reqId": "k0tu",
               "reqId1": "",
               "reqId2": "",
               "reqId3": "",
