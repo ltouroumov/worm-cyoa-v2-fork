@@ -2110,43 +2110,11 @@
       "startingSum": 0
     },
     {
-      "activatedId": "None",
-      "afterText": "",
-      "beforeText": "",
-      "id": "vp",
-      "name": "Nemesis Count",
-      "startingSum": 0
-    },
-    {
-      "activatedId": "None",
-      "afterText": "",
-      "beforeText": "",
-      "id": "uz",
-      "name": "Second Wave Count",
-      "startingSum": 0
-    },
-    {
       "activatedId": "hheh",
       "afterText": "DP",
       "beforeText": "Doll Points:",
       "id": "d2",
       "name": "Doll Points",
-      "startingSum": 0
-    },
-    {
-      "activatedId": "None",
-      "afterText": "",
-      "beforeText": "",
-      "id": "q5",
-      "name": "Wanted (Local) Count",
-      "startingSum": 0
-    },
-    {
-      "activatedId": "None",
-      "afterText": "",
-      "beforeText": "",
-      "id": "03",
-      "name": "Wanted (Global) Count",
       "startingSum": 0
     }
   ],
@@ -17285,6 +17253,7 @@
           "id": "weh8",
           "image": "",
           "isActive": false,
+          "isMultipleUseVariable": true,
           "isSelectableMultiple": true,
           "isVisible": true,
           "multipleScoreId": "q5",
@@ -17427,6 +17396,7 @@
           "id": "txtt",
           "image": "",
           "isActive": false,
+          "isMultipleUseVariable": true,
           "isSelectableMultiple": true,
           "isVisible": true,
           "multipleScoreId": "03",
