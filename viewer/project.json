@@ -11957,13 +11957,40 @@
       "id": "6ouk",
       "image": "",
       "isButtonRow": false,
-      "isEditModeOn": false,
+      "isEditModeOn": true,
       "isInfoRow": false,
       "isPrivateStyling": false,
       "isRequirementOpen": false,
       "isResultRow": false,
       "objectWidth": "col-md-4",
       "objects": [
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "euib",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "objectWidth": "col-12",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "CP",
+              "beforeText": "Gain:",
+              "id": "2b",
+              "isActive": false,
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-50"
+            }
+          ],
+          "template": 1,
+          "text": "You have no Shard. You may not take any powers and some Perks will be restricted to you.",
+          "title": "Shardless"
+        },
         {
           "addons": [],
           "defaultAspectHeight": 1,
@@ -11996,8 +12023,8 @@
           "defaultAspectHeight": 1,
           "defaultAspectWidth": 1,
           "groups": [],
-          "id": "euib",
-          "image": "",
+          "id": "4ok9",
+          "image": "/worm-cyoa-v6-fork/viewer/images/obj-4ok9.jpeg",
           "isActive": false,
           "isVisible": true,
           "objectWidth": "",
@@ -12005,18 +12032,28 @@
           "scores": [
             {
               "afterText": "CP",
-              "beforeText": "Gain:",
+              "beforeText": "Cost:",
               "id": "2b",
               "isActive": false,
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "-50"
+              "value": "5"
+            },
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "isActive": false,
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "5"
             }
           ],
-          "template": 1,
-          "text": "You have no Shard. You may not take any powers and some Perks will be restricted to you.",
-          "title": "Shardless"
+          "template": "1",
+          "text": "Your power comes from the Wanderer Entity.\n+ Your power doesn't alter your personality or push you towards conflict.\n+ You instinctively understand how to use your powers.\n+ Your power start slightly stronger than describe and can grow in strength and potency over time if you push your limits.\n+ Your power will back you up in a situation where you are incapacitated and are unable to continue fighting. \n+ Your power has enough juice to last at least a few centuries of continuous use.",
+          "title": "Shard of the Wanderer"
         },
         {
           "addons": [],
@@ -12334,29 +12371,6 @@
           "operator": "",
           "orRequired": [
             {
-              "req": "0s6z"
-            },
-            {
-              "req": "ar45"
-            }
-          ],
-          "reqId": "",
-          "reqId1": "",
-          "reqId2": "",
-          "reqId3": "",
-          "reqPoints": 0,
-          "required": true,
-          "requireds": [],
-          "showRequired": false,
-          "type": "or"
-        },
-        {
-          "afterText": "choice",
-          "beforeText": "Required:",
-          "id": "",
-          "operator": "",
-          "orRequired": [
-            {
               "req": ""
             },
             {
@@ -12378,6 +12392,32 @@
           "requireds": [],
           "showRequired": false,
           "type": "id"
+        },
+        {
+          "afterText": "choice",
+          "beforeText": "Required:",
+          "id": "",
+          "operator": "",
+          "orRequired": [
+            {
+              "req": "0s6z"
+            },
+            {
+              "req": "ar45"
+            },
+            {
+              "req": "4ok9"
+            }
+          ],
+          "reqId": "",
+          "reqId1": "",
+          "reqId2": "",
+          "reqId3": "",
+          "reqPoints": 0,
+          "required": true,
+          "requireds": [],
+          "showRequired": false,
+          "type": "or"
         }
       ],
       "resultGroupId": "pp",
@@ -12831,7 +12871,7 @@
               "req": ""
             }
           ],
-          "reqId": "0s6z",
+          "reqId": "xy6v",
           "reqId1": "",
           "reqId2": "",
           "reqId3": "",
@@ -12860,7 +12900,7 @@
               "req": ""
             }
           ],
-          "reqId": "xy6v",
+          "reqId": "0s6z",
           "reqId1": "",
           "reqId2": "",
           "reqId3": "",
@@ -16286,7 +16326,7 @@
       "id": "pc8m",
       "image": "",
       "isButtonRow": false,
-      "isEditModeOn": true,
+      "isEditModeOn": false,
       "isInfoRow": false,
       "isPrivateStyling": false,
       "isRequirementOpen": false,
@@ -42717,7 +42757,7 @@
             }
           ],
           "template": 1,
-          "text": "<i>Heavy and turdy, very expensive</i>\n\nYour pick is a tinkertech suit, or an actual set of medieval or some other sort of armor. Will most likely slow you down and constrict your movements, but it offers the the best protection against conventional weapons or attacks.",
+          "text": "<i>Heavy and sturdy, very expensive</i>\n\nYour pick is a tinkertech suit, or an actual set of medieval or some other sort of armor. Will most likely slow you down and constrict your movements, but it offers the the best protection against conventional weapons or attacks.",
           "title": "Armor"
         },
         {
@@ -43647,7 +43687,7 @@
           "isVisible": true,
           "multipleUseVariable": 0,
           "numMultipleTimesMinus": "0",
-          "numMultipleTimesPluss": "10",
+          "numMultipleTimesPluss": "50",
           "objectWidth": "",
           "requireds": [],
           "scores": [
@@ -43678,7 +43718,7 @@
           "isVisible": true,
           "multipleUseVariable": 0,
           "numMultipleTimesMinus": "0",
-          "numMultipleTimesPluss": "10",
+          "numMultipleTimesPluss": "50",
           "objectWidth": "",
           "requireds": [],
           "scores": [
@@ -43970,11 +44010,12 @@
           "id": "83zs",
           "image": "",
           "isActive": false,
-          "isMultipleUseVariable": false,
-          "isSelectableMultiple": false,
+          "isMultipleUseVariable": true,
+          "isSelectableMultiple": true,
           "isVisible": true,
           "multipleUseVariable": 0,
           "numMultipleTimesMinus": "0",
+          "numMultipleTimesPluss": "5",
           "objectWidth": "",
           "requireds": [],
           "scores": [
@@ -44015,7 +44056,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "15"
+              "value": "10"
             }
           ],
           "template": 1,
@@ -44045,7 +44086,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "15"
+              "value": "10"
             }
           ],
           "template": 1,
