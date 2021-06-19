@@ -11957,7 +11957,7 @@
       "id": "6ouk",
       "image": "",
       "isButtonRow": false,
-      "isEditModeOn": true,
+      "isEditModeOn": false,
       "isInfoRow": false,
       "isPrivateStyling": false,
       "isRequirementOpen": false,
@@ -15418,26 +15418,32 @@
           "requireds": [
             {
               "afterText": "",
-              "beforeText": "Required:",
+              "beforeText": "Incompatible:",
               "id": "",
               "operator": "",
               "orRequired": [
                 {
-                  "req": "0s6z"
+                  "req": ""
                 },
                 {
-                  "req": "ar45"
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
                 }
               ],
-              "reqId": "",
+              "reqId": "euib",
               "reqId1": "",
               "reqId2": "",
               "reqId3": "",
               "reqPoints": 0,
-              "required": true,
+              "required": false,
               "requireds": [],
               "showRequired": true,
-              "type": "or"
+              "type": "id"
             }
           ],
           "scores": [
@@ -15479,26 +15485,32 @@
           "requireds": [
             {
               "afterText": "",
-              "beforeText": "Required:",
+              "beforeText": "Incompatible:",
               "id": "",
               "operator": "",
               "orRequired": [
                 {
-                  "req": "0s6z"
+                  "req": ""
                 },
                 {
-                  "req": "ar45"
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
                 }
               ],
-              "reqId": "",
+              "reqId": "euib",
               "reqId1": "",
               "reqId2": "",
               "reqId3": "",
               "reqPoints": 0,
-              "required": true,
+              "required": false,
               "requireds": [],
               "showRequired": true,
-              "type": "or"
+              "type": "id"
             }
           ],
           "scores": [
@@ -15683,6 +15695,7 @@
               "afterText": "SP",
               "beforeText": "Cost:",
               "id": "rm",
+              "isActive": false,
               "requireds": [],
               "showScore": true,
               "type": "",
@@ -15692,6 +15705,7 @@
               "afterText": "CP",
               "beforeText": "Cost:",
               "id": "2b",
+              "isActive": false,
               "requireds": [],
               "showScore": true,
               "type": "",
@@ -20852,6 +20866,7 @@
               "afterText": "SP",
               "beforeText": "Gain:",
               "id": "rm",
+              "isActive": false,
               "requireds": [
                 {
                   "afterText": "choice",
@@ -20891,6 +20906,7 @@
               "afterText": "CP",
               "beforeText": "Gain:",
               "id": "2b",
+              "isActive": false,
               "requireds": [
                 {
                   "afterText": "choice",
@@ -22062,6 +22078,7 @@
               "afterText": "SP",
               "beforeText": "Gain:",
               "id": "rm",
+              "isActive": false,
               "requireds": [
                 {
                   "afterText": "choice",
@@ -22101,6 +22118,7 @@
               "afterText": "CP",
               "beforeText": "Gain:",
               "id": "2b",
+              "isActive": false,
               "requireds": [
                 {
                   "afterText": "choice",
@@ -32921,6 +32939,7 @@
               "afterText": "SP",
               "beforeText": "Cost:",
               "id": "rm",
+              "isActive": false,
               "requireds": [],
               "showScore": true,
               "type": "",
@@ -43872,6 +43891,7 @@
               "afterText": "CP",
               "beforeText": "Cost:",
               "id": "2b",
+              "isActive": false,
               "requireds": [],
               "showScore": true,
               "type": "",
@@ -43932,6 +43952,7 @@
               "afterText": "CP",
               "beforeText": "Cost:",
               "id": "2b",
+              "isActive": false,
               "requireds": [],
               "showScore": true,
               "type": "",
@@ -43992,6 +44013,7 @@
               "afterText": "CP",
               "beforeText": "Cost:",
               "id": "2b",
+              "isActive": false,
               "requireds": [],
               "showScore": true,
               "type": "",
@@ -44083,6 +44105,7 @@
               "afterText": "CP",
               "beforeText": "Cost:",
               "id": "2b",
+              "isActive": false,
               "requireds": [],
               "showScore": true,
               "type": "",
