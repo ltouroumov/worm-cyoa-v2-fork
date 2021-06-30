@@ -2116,6 +2116,14 @@
       "id": "d2",
       "name": "Doll Points",
       "startingSum": 0
+    },
+    {
+      "activatedId": "k89b",
+      "afterText": "",
+      "beforeText": "Network Capacity:",
+      "id": "1u",
+      "name": "Network Capacity",
+      "startingSum": 0
     }
   ],
   "rows": [
@@ -12281,7 +12289,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "20"
+              "value": "10"
             }
           ],
           "template": 1,
@@ -12323,7 +12331,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "-20"
+              "value": "-10"
             }
           ],
           "template": 1,
@@ -12546,6 +12554,359 @@
       "template": "1",
       "title": "Shard Ranking",
       "titleText": "How powerful is your Shard? This effects the maximum strength of powers you can receive."
+    },
+    {
+      "allowedChoices": 1,
+      "buttonId": "",
+      "buttonRandom": false,
+      "buttonRandomNumber": 1,
+      "buttonText": "Click",
+      "buttonType": true,
+      "currentChoices": 0,
+      "defaultAspectHeight": 1,
+      "defaultAspectWidth": 1,
+      "id": "h7rz",
+      "image": "",
+      "isButtonRow": false,
+      "isEditModeOn": false,
+      "isInfoRow": false,
+      "isPrivateStyling": false,
+      "isRequirementOpen": false,
+      "isResultRow": false,
+      "objectWidth": "col-sm-6",
+      "objects": [
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "gw3q",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Gain:",
+              "id": "rm",
+              "isActive": false,
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-10"
+            },
+            {
+              "afterText": "CP",
+              "beforeText": "Cost:",
+              "id": "2b",
+              "isActive": false,
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "10"
+            }
+          ],
+          "template": 1,
+          "text": "Instead of entering the world of Worm as a Host you'll become a Shard instead. Your Host is determined by your choices in the Character section and the Perks and Drawbacks apply to them instead (with the exception of the ones that affect their Shard or the World). If you become the shard of an existing parahuman you take over their existing shard instead of becoming a new one. Your hosts can reach your nesting dimension through portals and teleportation with your permission.",
+          "title": "Shard"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "k89b",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [
+            {
+              "afterText": "",
+              "beforeText": "Required:",
+              "id": "",
+              "operator": "",
+              "orRequired": [
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                }
+              ],
+              "reqId": "sxhj",
+              "reqId1": "",
+              "reqId2": "",
+              "reqId3": "",
+              "reqPoints": 0,
+              "required": true,
+              "requireds": [],
+              "showRequired": true,
+              "type": "id"
+            }
+          ],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Gain:",
+              "id": "rm",
+              "isActive": false,
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-20"
+            },
+            {
+              "afterText": "CP",
+              "beforeText": "Cost:",
+              "id": "2b",
+              "isActive": false,
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "20"
+            },
+            {
+              "afterText": "Network Capacity",
+              "beforeText": "Gain:",
+              "id": "1u",
+              "isActive": false,
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-5"
+            }
+          ],
+          "template": 1,
+          "text": "Instead of entering the world of Worm as a Host, you'll become a (baby) Entity instead. Your Avatar is determined by your choices in the Character section and the Perks and Drawbacks apply to it (with the exception of the ones that affect their Shard or the World). If you picked an existing parahuman, their Shard will be the central authority of the new entity. Each power you pick will add one Shard to your collective. You have control over who can enter your nesting dimension(s). Zion or another entity would be able to force their way in.",
+          "title": "Entity"
+        }
+      ],
+      "requireds": [
+        {
+          "afterText": "choice",
+          "beforeText": "Required:",
+          "id": "",
+          "operator": "",
+          "orRequired": [
+            {
+              "req": ""
+            },
+            {
+              "req": ""
+            },
+            {
+              "req": ""
+            },
+            {
+              "req": ""
+            }
+          ],
+          "reqId": "xy6v",
+          "reqId1": "",
+          "reqId2": "",
+          "reqId3": "",
+          "reqPoints": 0,
+          "required": true,
+          "requireds": [],
+          "showRequired": false,
+          "type": "id"
+        },
+        {
+          "afterText": "choice",
+          "beforeText": "Required:",
+          "id": "",
+          "operator": "",
+          "orRequired": [
+            {
+              "req": "0s6z"
+            },
+            {
+              "req": "ar45"
+            },
+            {
+              "req": "4ok9"
+            }
+          ],
+          "reqId": "",
+          "reqId1": "",
+          "reqId2": "",
+          "reqId3": "",
+          "reqPoints": 0,
+          "required": true,
+          "requireds": [],
+          "showRequired": false,
+          "type": "or"
+        }
+      ],
+      "resultGroupId": "pp",
+      "styling": {
+        "addonText": "Times New Roman",
+        "addonTextAlign": "center",
+        "addonTextColor": "000000",
+        "addonTextTextSize": 100,
+        "addonTitle": "Times New Roman",
+        "addonTitleAlign": "center",
+        "addonTitleColor": "000000",
+        "addonTitleTextSize": 200,
+        "backPackWidth": 1200,
+        "backgroundColor": "#FFFFFFFF",
+        "backgroundImage": "",
+        "barBackgroundColor": "#FFFFFFFF",
+        "barMargin": 0,
+        "barPadding": 0,
+        "barTextColor": "#000000",
+        "barTextFont": "Times New Roman",
+        "barTextMargin": 0,
+        "barTextPadding": 17,
+        "barTextSize": 15,
+        "objectBackgroundImage": "",
+        "objectBgColor": "#FFFFFFFF",
+        "objectBgColorIsOn": false,
+        "objectBorderColor": "red",
+        "objectBorderIsOn": false,
+        "objectBorderRadiusBottomLeft": 0,
+        "objectBorderRadiusBottomRight": 0,
+        "objectBorderRadiusIsPixels": true,
+        "objectBorderRadiusTopLeft": 0,
+        "objectBorderRadiusTopRight": 0,
+        "objectBorderStyle": "solid",
+        "objectBorderWidth": 2,
+        "objectDropShadowBlur": 0,
+        "objectDropShadowColor": "grey",
+        "objectDropShadowH": 0,
+        "objectDropShadowIsOn": false,
+        "objectDropShadowSpread": 0,
+        "objectDropShadowV": 0,
+        "objectHeight": true,
+        "objectImageMarginBottom": 0,
+        "objectImageMarginTop": 0,
+        "objectImageWidth": 100,
+        "objectImgBorderColor": "red",
+        "objectImgBorderIsOn": false,
+        "objectImgBorderRadiusBottomLeft": 0,
+        "objectImgBorderRadiusBottomRight": 0,
+        "objectImgBorderRadiusIsPixels": true,
+        "objectImgBorderRadiusTopLeft": 0,
+        "objectImgBorderRadiusTopRight": 0,
+        "objectImgBorderStyle": "solid",
+        "objectImgBorderWidth": 2,
+        "objectMargin": 10,
+        "objectOverflowIsOn": true,
+        "objectText": "Times New Roman",
+        "objectTextAlign": "center",
+        "objectTextColor": "000000",
+        "objectTextPadding": 10,
+        "objectTextTextSize": 100,
+        "objectTitle": "Times New Roman",
+        "objectTitleAlign": "center",
+        "objectTitleColor": "000000",
+        "objectTitleTextSize": 200,
+        "reqBgColorIsOn": false,
+        "reqFilterBgColor": "#FFFFFFFF",
+        "reqFilterBlur": 0,
+        "reqFilterBlurIsOn": false,
+        "reqFilterBright": 100,
+        "reqFilterBrightIsOn": false,
+        "reqFilterCont": 100,
+        "reqFilterContIsOn": false,
+        "reqFilterGray": 0,
+        "reqFilterGrayIsOn": false,
+        "reqFilterHue": 0,
+        "reqFilterHueIsOn": false,
+        "reqFilterInvert": 0,
+        "reqFilterInvertIsOn": false,
+        "reqFilterOpac": 50,
+        "reqFilterOpacIsOn": true,
+        "reqFilterSatur": 1,
+        "reqFilterSaturIsOn": false,
+        "reqFilterSepia": 0,
+        "reqFilterSepiaIsOn": false,
+        "reqFilterVisibleIsOn": false,
+        "rowBackgroundImage": "",
+        "rowBgColor": "#FFFFFFFF",
+        "rowBgColorIsOn": false,
+        "rowBodyMarginBottom": 25,
+        "rowBodyMarginSides": 1,
+        "rowBodyMarginTop": 25,
+        "rowBorderColor": "red",
+        "rowBorderIsOn": false,
+        "rowBorderRadiusBottomLeft": 0,
+        "rowBorderRadiusBottomRight": 0,
+        "rowBorderRadiusIsPixels": true,
+        "rowBorderRadiusTopLeft": 0,
+        "rowBorderRadiusTopRight": 0,
+        "rowBorderStyle": "solid",
+        "rowBorderWidth": 2,
+        "rowButtonXPadding": 0,
+        "rowButtonYPadding": 0,
+        "rowDropShadowBlur": 0,
+        "rowDropShadowColor": "grey",
+        "rowDropShadowH": 0,
+        "rowDropShadowIsOn": false,
+        "rowDropShadowSpread": 0,
+        "rowDropShadowV": 0,
+        "rowImageMarginTop": 0,
+        "rowImageWidth": 100,
+        "rowImgBorderColor": "red",
+        "rowImgBorderIsOn": false,
+        "rowImgBorderRadiusBottomLeft": 0,
+        "rowImgBorderRadiusBottomRight": 0,
+        "rowImgBorderRadiusIsPixels": true,
+        "rowImgBorderRadiusTopLeft": 0,
+        "rowImgBorderRadiusTopRight": 0,
+        "rowImgBorderStyle": "solid",
+        "rowImgBorderWidth": 2,
+        "rowMargin": 10,
+        "rowOverflowIsOn": true,
+        "rowText": "Times New Roman",
+        "rowTextAlign": "center",
+        "rowTextColor": "000000",
+        "rowTextPaddingX": 10,
+        "rowTextPaddingY": 5,
+        "rowTextTextSize": 100,
+        "rowTitle": "Times New Roman",
+        "rowTitleAlign": "center",
+        "rowTitleColor": "000000",
+        "rowTitleTextSize": 200,
+        "scoreText": "Times New Roman",
+        "scoreTextAlign": "center",
+        "scoreTextColor": "000000",
+        "scoreTextSize": 75,
+        "selBgColorIsOn": true,
+        "selFilterBgColor": "#70FF7EFF",
+        "selFilterBlur": 0,
+        "selFilterBlurIsOn": false,
+        "selFilterBright": 100,
+        "selFilterBrightIsOn": false,
+        "selFilterCont": 100,
+        "selFilterContIsOn": false,
+        "selFilterGray": 0,
+        "selFilterGrayIsOn": false,
+        "selFilterHue": 0,
+        "selFilterHueIsOn": false,
+        "selFilterInvert": 0,
+        "selFilterInvertIsOn": false,
+        "selFilterOpac": 100,
+        "selFilterOpacIsOn": false,
+        "selFilterSatur": 1,
+        "selFilterSaturIsOn": false,
+        "selFilterSepia": 0,
+        "selFilterSepiaIsOn": false
+      },
+      "template": "1",
+      "title": "Ascension",
+      "titleText": ""
     },
     {
       "allowedChoices": 0,
@@ -13037,6 +13398,1601 @@
       "template": "1",
       "title": "Shard Influence",
       "titleText": "You are pushed toward conflict by your Shard. How bad is it? If you choose no options here, your Shard will not alter your personality in any way, shape, or form. Your Shard might still push you toward conflict through strengthening your powers during times of conflict."
+    },
+    {
+      "allowedChoices": 0,
+      "buttonId": "",
+      "buttonRandom": false,
+      "buttonRandomNumber": 1,
+      "buttonText": "Click",
+      "buttonType": true,
+      "currentChoices": 0,
+      "defaultAspectHeight": 1,
+      "defaultAspectWidth": 1,
+      "id": "114m",
+      "image": "",
+      "isButtonRow": false,
+      "isEditModeOn": false,
+      "isInfoRow": false,
+      "isPrivateStyling": false,
+      "isRequirementOpen": false,
+      "isResultRow": false,
+      "objectWidth": "col-md-3",
+      "objects": [
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "u1vu",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "2"
+            }
+          ],
+          "template": 1,
+          "text": "You can influence your host through subtle changes in their thought process. This can be no more powerful than a slight increase in their aggression.",
+          "title": "Influence"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "hxl4",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "3"
+            }
+          ],
+          "template": 1,
+          "text": "You can send mental messages to your host. These messages are limited to a simple concept such as an emotion connected to something they sense.",
+          "title": "Advise"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "4rmk",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "8"
+            }
+          ],
+          "template": 1,
+          "text": "You can actively force your hosts to act. A host can resist these compulsions but not forever, and when they do fail regaining control will be even harder. The more general the act the harder it is to resist.",
+          "title": "Control"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "x6ok",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "8"
+            }
+          ],
+          "template": 1,
+          "text": "You can alter your hosts perception, creating hallucinations and distorting the senses.",
+          "title": "Am I Seeing Things?"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "j9co",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "5"
+            }
+          ],
+          "template": 1,
+          "text": "You can reward your host for good behavior. By dedicating time and energy to that host you can strengthen their powers and give their abilities more breadth. This is a slow process, taking a month to boost by 2%.",
+          "title": "Modulate Power"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "je7w",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "5"
+            }
+          ],
+          "template": 1,
+          "text": "Should a host of yours experience a trauma worthy of a second trigger you can grant them just such a thing. This event will grow their power to new heights and gain new aspects. The preparation for this takes a month energy. Use the Second Triggers from the power description if applicable.",
+          "title": "Redux"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "jdf6",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "8"
+            }
+          ],
+          "template": 1,
+          "text": "You can use a month of energy to mark people who have a social connection to a host of yours. Should they undergo a traumatic enough event to trigger you will gain them as an additional host. Every host you gain will have a variation on the original's power set. You can add a new aspect or angle to the power, but it must come with an equal reduction in some other part of the power.",
+          "title": "Multiple Hosts"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "r6k5",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "2"
+            }
+          ],
+          "template": 1,
+          "text": "Should a host of yours displease you, you can sabotage their powers, making them lose control and opening up weaknesses.",
+          "title": "Judge Jury and Executioner"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "ifn2",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "5"
+            }
+          ],
+          "template": 1,
+          "text": "You can bring your hosts into a dream space when they sleep. This space can only be as complex as their mind can dream up, and they will remember this as well as they would remember any other dream. If you like you can spend your time in this dream space even when they are awake.",
+          "title": "Dreams"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "nspz",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "5"
+            }
+          ],
+          "template": 1,
+          "text": "Your host can leave certain certain aspects of managing their power up to you, in which case you can automatically handle tasks for them.",
+          "title": "A Helping Hand"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "88td",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "col-sm-6",
+          "requireds": [
+            {
+              "afterText": "",
+              "beforeText": "Required:",
+              "id": "",
+              "operator": "",
+              "orRequired": [
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                }
+              ],
+              "reqId": "sxhj",
+              "reqId1": "",
+              "reqId2": "",
+              "reqId3": "",
+              "reqPoints": 0,
+              "required": true,
+              "requireds": [],
+              "showRequired": true,
+              "type": "id"
+            }
+          ],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "15"
+            }
+          ],
+          "template": 1,
+          "text": "You can subsume the shard of anyone your host kills. This lets you use the powers of those shards as replacements when making powersets for new hosts. If you gain the right shards you could become a new entity someday. You also subsume the shards of parahumans who cluster trigger with one of your hosts. You can use the perks from this section on hosts of subsumed shards.",
+          "title": "A New God"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "pby0",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-5"
+            }
+          ],
+          "template": 1,
+          "text": "You cannot do anything that would expose your true nature as a shard to humanity and your host. This does not prevent communicating with people who already know about shards",
+          "title": "Forbidden knowledge"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "odoz",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "isActive": false,
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-10"
+            }
+          ],
+          "template": 1,
+          "text": "You lose your humanity, every memory, ideal, and piece of you is torn apart and made anew without the warmth of empathy and emotion.",
+          "title": "Nothing Left of You"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "incu",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "isActive": false,
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-10"
+            }
+          ],
+          "template": 1,
+          "text": "Normally the world that holds your body would be protected from dimensional travel. This drawback strips that protection from you. any means of travel that could reach worlds like bet or aleph can reach you.",
+          "title": "A Sitting Duck"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "8bln",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-10"
+            }
+          ],
+          "template": 1,
+          "text": "You are driven to complete the greater goals of the entities. as long as it does not directly interfere with their goalds you can otherwise act as you desire.",
+          "title": "A Loyal Shard"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "bys5",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-10"
+            }
+          ],
+          "template": 1,
+          "text": "Your hosts are aware of you and are horrified by the intrusion into their mind. They will hate you regardless of your influence.",
+          "title": "Parasite"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "eygo",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-10"
+            }
+          ],
+          "template": 1,
+          "text": "Should a host of yours die you will perish as well. This does not apply to deaths if they persist in some form through their powers.",
+          "title": "The Bond of Life"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "skpp",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-10"
+            }
+          ],
+          "template": 1,
+          "text": "Your ability to perceive your hosts is broken. You will lose perception of them for days at a time at random.",
+          "title": "Get a Grip"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "cgeo",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-10"
+            }
+          ],
+          "template": 1,
+          "text": "All information you receive and send out is sent through the format of a simple text readouts. This applies to the perception, influence, advise, and control perks.",
+          "title": "Telegram"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "duhc",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-15"
+            }
+          ],
+          "template": 1,
+          "text": "Your ability to generate energy for your powers is crippled, anything you do takes twice as long.",
+          "title": "Crippled"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "107p",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-20"
+            }
+          ],
+          "template": 1,
+          "text": "Scion is aware of you and considers you to be a virus. He will make destroying you a top priority.",
+          "title": "Infection Detected"
+        }
+      ],
+      "requireds": [
+        {
+          "afterText": "choice",
+          "beforeText": "Required:",
+          "id": "",
+          "operator": "",
+          "orRequired": [
+            {
+              "req": "0s6z"
+            },
+            {
+              "req": "ar45"
+            },
+            {
+              "req": "4ok9"
+            }
+          ],
+          "reqId": "",
+          "reqId1": "",
+          "reqId2": "",
+          "reqId3": "",
+          "reqPoints": 0,
+          "required": true,
+          "requireds": [],
+          "showRequired": false,
+          "type": "or"
+        },
+        {
+          "afterText": "choice",
+          "beforeText": "Required:",
+          "id": "",
+          "operator": "",
+          "orRequired": [
+            {
+              "req": ""
+            },
+            {
+              "req": ""
+            },
+            {
+              "req": ""
+            },
+            {
+              "req": ""
+            }
+          ],
+          "reqId": "gw3q",
+          "reqId1": "",
+          "reqId2": "",
+          "reqId3": "",
+          "reqPoints": 0,
+          "required": true,
+          "requireds": [],
+          "showRequired": false,
+          "type": "id"
+        }
+      ],
+      "resultGroupId": "",
+      "rowJustify": "center",
+      "styling": {
+        "addonText": "Times New Roman",
+        "addonTextAlign": "center",
+        "addonTextColor": "#FFFFFFFF",
+        "addonTextTextSize": 100,
+        "addonTitle": "Times New Roman",
+        "addonTitleAlign": "center",
+        "addonTitleColor": "#FFFFFFFF",
+        "addonTitleTextSize": 200,
+        "backPackWidth": 1200,
+        "backgroundColor": "#000000FF",
+        "backgroundImage": "",
+        "barBackgroundColor": "#FFFFFFFF",
+        "barMargin": 0,
+        "barPadding": 0,
+        "barTextColor": "#000000",
+        "barTextFont": "Times New Roman",
+        "barTextMargin": 0,
+        "barTextPadding": 17,
+        "barTextSize": 15,
+        "objectBackgroundImage": "",
+        "objectBgColor": "#FFFFFFFF",
+        "objectBgColorIsOn": false,
+        "objectBorderColor": "#FDFDFDFF",
+        "objectBorderIsOn": true,
+        "objectBorderRadiusBottomLeft": "5",
+        "objectBorderRadiusBottomRight": "5",
+        "objectBorderRadiusIsPixels": true,
+        "objectBorderRadiusTopLeft": "5",
+        "objectBorderRadiusTopRight": "5",
+        "objectBorderStyle": "solid",
+        "objectBorderWidth": 2,
+        "objectDropShadowBlur": 0,
+        "objectDropShadowColor": "#FFEF00FF",
+        "objectDropShadowH": 0,
+        "objectDropShadowIsOn": false,
+        "objectDropShadowSpread": 0,
+        "objectDropShadowV": 0,
+        "objectHeight": true,
+        "objectImageMarginBottom": 0,
+        "objectImageMarginTop": 0,
+        "objectImageWidth": 100,
+        "objectImgBorderColor": "red",
+        "objectImgBorderIsOn": false,
+        "objectImgBorderRadiusBottomLeft": 0,
+        "objectImgBorderRadiusBottomRight": 0,
+        "objectImgBorderRadiusIsPixels": true,
+        "objectImgBorderRadiusTopLeft": 0,
+        "objectImgBorderRadiusTopRight": 0,
+        "objectImgBorderStyle": "solid",
+        "objectImgBorderWidth": 2,
+        "objectMargin": 10,
+        "objectOverflowIsOn": true,
+        "objectText": "Times New Roman",
+        "objectTextAlign": "center",
+        "objectTextColor": "#FFFFFFFF",
+        "objectTextPadding": 10,
+        "objectTextTextSize": 100,
+        "objectTitle": "Times New Roman",
+        "objectTitleAlign": "center",
+        "objectTitleColor": "#FFFFFFFF",
+        "objectTitleTextSize": 200,
+        "reqBgColorIsOn": true,
+        "reqFilterBgColor": "#6B6464FF",
+        "reqFilterBlur": 0,
+        "reqFilterBlurIsOn": false,
+        "reqFilterBright": 100,
+        "reqFilterBrightIsOn": false,
+        "reqFilterCont": 100,
+        "reqFilterContIsOn": false,
+        "reqFilterGray": 0,
+        "reqFilterGrayIsOn": false,
+        "reqFilterHue": 0,
+        "reqFilterHueIsOn": false,
+        "reqFilterInvert": "50",
+        "reqFilterInvertIsOn": false,
+        "reqFilterOpac": "25",
+        "reqFilterOpacIsOn": false,
+        "reqFilterSatur": 1,
+        "reqFilterSaturIsOn": false,
+        "reqFilterSepia": 0,
+        "reqFilterSepiaIsOn": false,
+        "reqFilterVisibleIsOn": false,
+        "rowBackgroundImage": "",
+        "rowBgColor": "#FFFFFFFF",
+        "rowBgColorIsOn": false,
+        "rowBodyMarginBottom": 25,
+        "rowBodyMarginSides": 1,
+        "rowBodyMarginTop": 25,
+        "rowBorderColor": "#FFEEDDFF",
+        "rowBorderIsOn": false,
+        "rowBorderRadiusBottomLeft": 0,
+        "rowBorderRadiusBottomRight": 0,
+        "rowBorderRadiusIsPixels": true,
+        "rowBorderRadiusTopLeft": 0,
+        "rowBorderRadiusTopRight": 0,
+        "rowBorderStyle": "solid",
+        "rowBorderWidth": 2,
+        "rowButtonXPadding": 0,
+        "rowButtonYPadding": 0,
+        "rowDropShadowBlur": 0,
+        "rowDropShadowColor": "#FFFFEEFF",
+        "rowDropShadowH": 0,
+        "rowDropShadowIsOn": false,
+        "rowDropShadowSpread": 0,
+        "rowDropShadowV": 0,
+        "rowImageMarginTop": 0,
+        "rowImageWidth": 100,
+        "rowImgBorderColor": "red",
+        "rowImgBorderIsOn": false,
+        "rowImgBorderRadiusBottomLeft": 0,
+        "rowImgBorderRadiusBottomRight": 0,
+        "rowImgBorderRadiusIsPixels": true,
+        "rowImgBorderRadiusTopLeft": 0,
+        "rowImgBorderRadiusTopRight": 0,
+        "rowImgBorderStyle": "solid",
+        "rowImgBorderWidth": 2,
+        "rowMargin": 10,
+        "rowOverflowIsOn": true,
+        "rowText": "Times New Roman",
+        "rowTextAlign": "center",
+        "rowTextColor": "#FFFFFFFF",
+        "rowTextPaddingX": 10,
+        "rowTextPaddingY": 5,
+        "rowTextTextSize": 100,
+        "rowTitle": "Times New Roman",
+        "rowTitleAlign": "center",
+        "rowTitleColor": "#FFFFFFFF",
+        "rowTitleTextSize": 200,
+        "scoreText": "Times New Roman",
+        "scoreTextAlign": "center",
+        "scoreTextColor": "#FFFFFFFF",
+        "scoreTextSize": 75,
+        "selBgColorIsOn": true,
+        "selFilterBgColor": "#3CAAAAFF",
+        "selFilterBlur": 0,
+        "selFilterBlurIsOn": false,
+        "selFilterBright": 100,
+        "selFilterBrightIsOn": false,
+        "selFilterCont": 100,
+        "selFilterContIsOn": false,
+        "selFilterGray": 0,
+        "selFilterGrayIsOn": false,
+        "selFilterHue": 0,
+        "selFilterHueIsOn": false,
+        "selFilterInvert": 0,
+        "selFilterInvertIsOn": false,
+        "selFilterOpac": 100,
+        "selFilterOpacIsOn": false,
+        "selFilterSatur": 1,
+        "selFilterSaturIsOn": false,
+        "selFilterSepia": 0,
+        "selFilterSepiaIsOn": false
+      },
+      "template": "1",
+      "title": "(Shard) Perks and Drawbacks",
+      "titleText": ""
+    },
+    {
+      "allowedChoices": 0,
+      "buttonId": "",
+      "buttonRandom": false,
+      "buttonRandomNumber": 1,
+      "buttonText": "Click",
+      "buttonType": true,
+      "currentChoices": 0,
+      "defaultAspectHeight": 1,
+      "defaultAspectWidth": 1,
+      "id": "xam6",
+      "image": "",
+      "isButtonRow": false,
+      "isEditModeOn": false,
+      "isInfoRow": false,
+      "isPrivateStyling": false,
+      "isRequirementOpen": false,
+      "isResultRow": false,
+      "objectWidth": "col-md-3",
+      "objects": [
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "fbt8",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "isActive": false,
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "5"
+            },
+            {
+              "afterText": "Network Capacity",
+              "beforeText": "Gain:",
+              "id": "1u",
+              "isActive": false,
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-5"
+            }
+          ],
+          "template": 1,
+          "text": "The Administrator Shard allows you to manage your collective more easily. It has vast multitasking capabilities and is capable of configuring other Shards for deployment or coordinate them.",
+          "title": "Administrator"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "d6q5",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "2"
+            },
+            {
+              "afterText": "Network Capacity",
+              "beforeText": "Gain:",
+              "id": "1u",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-2"
+            }
+          ],
+          "template": 1,
+          "text": "THE BROADCAST SHARD ALLOWS YOU TO COMMUNICATE BY SENDING PACKETS OF INFORMATION WITH THE ENERGY OF SEVERAL ATOMIC BOMBS. USEFUL FOR TALKING WITH OTHER ENTITIES.\n\n(This extends your communication range beyond 2000AU at the cost of some latency and higher energy consumption)",
+          "title": "BROADCAST"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "9cyk",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "2"
+            },
+            {
+              "afterText": "Network Capacity",
+              "beforeText": "Cost:",
+              "id": "1u",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "1"
+            }
+          ],
+          "template": 1,
+          "text": "This Shard allows you to observe the multiverse beyond the immediate surroundings of your Avatar.",
+          "title": "Clairvoyant"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "4jnb",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "2"
+            },
+            {
+              "afterText": "Network Capacity",
+              "beforeText": "Cost:",
+              "id": "1u",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "1"
+            }
+          ],
+          "template": 1,
+          "text": "This Shard allows you to teleport things across dimensions. It is capable of creating portals as well as performing direct translocation. You need to be able to perceive both ends or know the exact coordinate to teleport.",
+          "title": "Transposition"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "g6i4",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "8"
+            },
+            {
+              "afterText": "Network Capacity",
+              "beforeText": "Cost:",
+              "id": "1u",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "1"
+            }
+          ],
+          "template": 1,
+          "text": "This Shard allows you to predict the future. Unlike most precognition Shards, this one possesses an actual precognition organ which allows it to build extremely accurate predictions. It is also capable of performing simulations as an energy saving measure.\n\nUsing the precognition organ is extremely energy intensive.",
+          "title": "The Eye"
+        }
+      ],
+      "requireds": [
+        {
+          "afterText": "choice",
+          "beforeText": "Required:",
+          "id": "",
+          "operator": "",
+          "orRequired": [
+            {
+              "req": "0s6z"
+            },
+            {
+              "req": "ar45"
+            },
+            {
+              "req": "4ok9"
+            }
+          ],
+          "reqId": "",
+          "reqId1": "",
+          "reqId2": "",
+          "reqId3": "",
+          "reqPoints": 0,
+          "required": true,
+          "requireds": [],
+          "showRequired": false,
+          "type": "or"
+        },
+        {
+          "afterText": "choice",
+          "beforeText": "Required:",
+          "id": "",
+          "operator": "",
+          "orRequired": [
+            {
+              "req": ""
+            },
+            {
+              "req": ""
+            },
+            {
+              "req": ""
+            }
+          ],
+          "reqId": "k89b",
+          "reqId1": "",
+          "reqId2": "",
+          "reqId3": "",
+          "reqPoints": 0,
+          "required": true,
+          "requireds": [],
+          "showRequired": false,
+          "type": "id"
+        }
+      ],
+      "resultGroupId": "",
+      "styling": {
+        "addonText": "Times New Roman",
+        "addonTextAlign": "center",
+        "addonTextColor": "#FFFFFFFF",
+        "addonTextTextSize": 100,
+        "addonTitle": "Times New Roman",
+        "addonTitleAlign": "center",
+        "addonTitleColor": "#FFFFFFFF",
+        "addonTitleTextSize": 200,
+        "backPackWidth": 1200,
+        "backgroundColor": "#000000FF",
+        "backgroundImage": "",
+        "barBackgroundColor": "#FFFFFFFF",
+        "barMargin": 0,
+        "barPadding": 0,
+        "barTextColor": "#000000",
+        "barTextFont": "Times New Roman",
+        "barTextMargin": 0,
+        "barTextPadding": 17,
+        "barTextSize": 15,
+        "objectBackgroundImage": "",
+        "objectBgColor": "#FFFFFFFF",
+        "objectBgColorIsOn": false,
+        "objectBorderColor": "#FDFDFDFF",
+        "objectBorderIsOn": true,
+        "objectBorderRadiusBottomLeft": "5",
+        "objectBorderRadiusBottomRight": "5",
+        "objectBorderRadiusIsPixels": true,
+        "objectBorderRadiusTopLeft": "5",
+        "objectBorderRadiusTopRight": "5",
+        "objectBorderStyle": "solid",
+        "objectBorderWidth": 2,
+        "objectDropShadowBlur": 0,
+        "objectDropShadowColor": "#FFEF00FF",
+        "objectDropShadowH": 0,
+        "objectDropShadowIsOn": false,
+        "objectDropShadowSpread": 0,
+        "objectDropShadowV": 0,
+        "objectHeight": true,
+        "objectImageMarginBottom": 0,
+        "objectImageMarginTop": 0,
+        "objectImageWidth": 100,
+        "objectImgBorderColor": "red",
+        "objectImgBorderIsOn": false,
+        "objectImgBorderRadiusBottomLeft": 0,
+        "objectImgBorderRadiusBottomRight": 0,
+        "objectImgBorderRadiusIsPixels": true,
+        "objectImgBorderRadiusTopLeft": 0,
+        "objectImgBorderRadiusTopRight": 0,
+        "objectImgBorderStyle": "solid",
+        "objectImgBorderWidth": 2,
+        "objectMargin": 10,
+        "objectOverflowIsOn": true,
+        "objectText": "Times New Roman",
+        "objectTextAlign": "center",
+        "objectTextColor": "#FFFFFFFF",
+        "objectTextPadding": 10,
+        "objectTextTextSize": 100,
+        "objectTitle": "Times New Roman",
+        "objectTitleAlign": "center",
+        "objectTitleColor": "#FFFFFFFF",
+        "objectTitleTextSize": 200,
+        "reqBgColorIsOn": true,
+        "reqFilterBgColor": "#6B6464FF",
+        "reqFilterBlur": 0,
+        "reqFilterBlurIsOn": false,
+        "reqFilterBright": 100,
+        "reqFilterBrightIsOn": false,
+        "reqFilterCont": 100,
+        "reqFilterContIsOn": false,
+        "reqFilterGray": 0,
+        "reqFilterGrayIsOn": false,
+        "reqFilterHue": 0,
+        "reqFilterHueIsOn": false,
+        "reqFilterInvert": "50",
+        "reqFilterInvertIsOn": false,
+        "reqFilterOpac": "25",
+        "reqFilterOpacIsOn": false,
+        "reqFilterSatur": 1,
+        "reqFilterSaturIsOn": false,
+        "reqFilterSepia": 0,
+        "reqFilterSepiaIsOn": false,
+        "reqFilterVisibleIsOn": false,
+        "rowBackgroundImage": "",
+        "rowBgColor": "#FFFFFFFF",
+        "rowBgColorIsOn": false,
+        "rowBodyMarginBottom": 25,
+        "rowBodyMarginSides": 1,
+        "rowBodyMarginTop": 25,
+        "rowBorderColor": "#FFEEDDFF",
+        "rowBorderIsOn": false,
+        "rowBorderRadiusBottomLeft": 0,
+        "rowBorderRadiusBottomRight": 0,
+        "rowBorderRadiusIsPixels": true,
+        "rowBorderRadiusTopLeft": 0,
+        "rowBorderRadiusTopRight": 0,
+        "rowBorderStyle": "solid",
+        "rowBorderWidth": 2,
+        "rowButtonXPadding": 0,
+        "rowButtonYPadding": 0,
+        "rowDropShadowBlur": 0,
+        "rowDropShadowColor": "#FFFFEEFF",
+        "rowDropShadowH": 0,
+        "rowDropShadowIsOn": false,
+        "rowDropShadowSpread": 0,
+        "rowDropShadowV": 0,
+        "rowImageMarginTop": 0,
+        "rowImageWidth": 100,
+        "rowImgBorderColor": "red",
+        "rowImgBorderIsOn": false,
+        "rowImgBorderRadiusBottomLeft": 0,
+        "rowImgBorderRadiusBottomRight": 0,
+        "rowImgBorderRadiusIsPixels": true,
+        "rowImgBorderRadiusTopLeft": 0,
+        "rowImgBorderRadiusTopRight": 0,
+        "rowImgBorderStyle": "solid",
+        "rowImgBorderWidth": 2,
+        "rowMargin": 10,
+        "rowOverflowIsOn": true,
+        "rowText": "Times New Roman",
+        "rowTextAlign": "center",
+        "rowTextColor": "#FFFFFFFF",
+        "rowTextPaddingX": 10,
+        "rowTextPaddingY": 5,
+        "rowTextTextSize": 100,
+        "rowTitle": "Times New Roman",
+        "rowTitleAlign": "center",
+        "rowTitleColor": "#FFFFFFFF",
+        "rowTitleTextSize": 200,
+        "scoreText": "Times New Roman",
+        "scoreTextAlign": "center",
+        "scoreTextColor": "#FFFFFFFF",
+        "scoreTextSize": 75,
+        "selBgColorIsOn": true,
+        "selFilterBgColor": "#3CAAAAFF",
+        "selFilterBlur": 0,
+        "selFilterBlurIsOn": false,
+        "selFilterBright": 100,
+        "selFilterBrightIsOn": false,
+        "selFilterCont": 100,
+        "selFilterContIsOn": false,
+        "selFilterGray": 0,
+        "selFilterGrayIsOn": false,
+        "selFilterHue": 0,
+        "selFilterHueIsOn": false,
+        "selFilterInvert": 0,
+        "selFilterInvertIsOn": false,
+        "selFilterOpac": 100,
+        "selFilterOpacIsOn": false,
+        "selFilterSatur": 1,
+        "selFilterSaturIsOn": false,
+        "selFilterSepia": 0,
+        "selFilterSepiaIsOn": false
+      },
+      "template": "1",
+      "title": "(Entity) Extra Shards",
+      "titleText": ""
+    },
+    {
+      "allowedChoices": 0,
+      "buttonId": "",
+      "buttonRandom": false,
+      "buttonRandomNumber": 1,
+      "buttonText": "Click",
+      "buttonType": true,
+      "currentChoices": 0,
+      "defaultAspectHeight": 1,
+      "defaultAspectWidth": 1,
+      "id": "fde2",
+      "image": "",
+      "isButtonRow": false,
+      "isEditModeOn": false,
+      "isInfoRow": false,
+      "isPrivateStyling": false,
+      "isRequirementOpen": false,
+      "isResultRow": false,
+      "objectWidth": "col-md-3",
+      "objects": [
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "brm2",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "15"
+            }
+          ],
+          "template": 1,
+          "text": "Your shard possesses hub-level authentication keys from the Warrior or Thinker. With these you can convince other Shards to join your network. The lower level Shards will do so without contest but Vital or Queen level shards might need convincing arguments or a show of might.",
+          "title": "Queen Hub"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "fib7",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Gain:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-10"
+            }
+          ],
+          "template": 1,
+          "text": "You lose your humanity, every memory, ideal, and piece of you is torn apart and made anew without the warmth of empathy and emotion.",
+          "title": "Nothing Left of You"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "78ow",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Gain:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-10"
+            }
+          ],
+          "template": 1,
+          "text": "Normally the worlds that your Shards reside on would be protected from dimensional travel. This drawback strips that protection from you. any means of travel that could reach worlds like bet or aleph can reach you.",
+          "title": "A Sitting Duck"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "0trp",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Gain:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-20"
+            }
+          ],
+          "template": 1,
+          "text": "Scion is aware of you and considers you to be a virus. He will make destroying you a top priority.",
+          "title": "Infection Detected"
+        }
+      ],
+      "requireds": [
+        {
+          "afterText": "choice",
+          "beforeText": "Required:",
+          "id": "",
+          "operator": "",
+          "orRequired": [
+            {
+              "req": "0s6z"
+            },
+            {
+              "req": "ar45"
+            },
+            {
+              "req": "4ok9"
+            }
+          ],
+          "reqId": "",
+          "reqId1": "",
+          "reqId2": "",
+          "reqId3": "",
+          "reqPoints": 0,
+          "required": true,
+          "requireds": [],
+          "showRequired": false,
+          "type": "or"
+        },
+        {
+          "afterText": "choice",
+          "beforeText": "Required:",
+          "id": "",
+          "operator": "",
+          "orRequired": [
+            {
+              "req": ""
+            },
+            {
+              "req": ""
+            },
+            {
+              "req": ""
+            }
+          ],
+          "reqId": "k89b",
+          "reqId1": "",
+          "reqId2": "",
+          "reqId3": "",
+          "reqPoints": 0,
+          "required": true,
+          "requireds": [],
+          "showRequired": false,
+          "type": "id"
+        }
+      ],
+      "resultGroupId": "",
+      "styling": {
+        "addonText": "Times New Roman",
+        "addonTextAlign": "center",
+        "addonTextColor": "#FFFFFFFF",
+        "addonTextTextSize": 100,
+        "addonTitle": "Times New Roman",
+        "addonTitleAlign": "center",
+        "addonTitleColor": "#FFFFFFFF",
+        "addonTitleTextSize": 200,
+        "backPackWidth": 1200,
+        "backgroundColor": "#000000FF",
+        "backgroundImage": "",
+        "barBackgroundColor": "#FFFFFFFF",
+        "barMargin": 0,
+        "barPadding": 0,
+        "barTextColor": "#000000",
+        "barTextFont": "Times New Roman",
+        "barTextMargin": 0,
+        "barTextPadding": 17,
+        "barTextSize": 15,
+        "objectBackgroundImage": "",
+        "objectBgColor": "#FFFFFFFF",
+        "objectBgColorIsOn": false,
+        "objectBorderColor": "#FDFDFDFF",
+        "objectBorderIsOn": true,
+        "objectBorderRadiusBottomLeft": "5",
+        "objectBorderRadiusBottomRight": "5",
+        "objectBorderRadiusIsPixels": true,
+        "objectBorderRadiusTopLeft": "5",
+        "objectBorderRadiusTopRight": "5",
+        "objectBorderStyle": "solid",
+        "objectBorderWidth": 2,
+        "objectDropShadowBlur": 0,
+        "objectDropShadowColor": "#FFEF00FF",
+        "objectDropShadowH": 0,
+        "objectDropShadowIsOn": false,
+        "objectDropShadowSpread": 0,
+        "objectDropShadowV": 0,
+        "objectHeight": true,
+        "objectImageMarginBottom": 0,
+        "objectImageMarginTop": 0,
+        "objectImageWidth": 100,
+        "objectImgBorderColor": "red",
+        "objectImgBorderIsOn": false,
+        "objectImgBorderRadiusBottomLeft": 0,
+        "objectImgBorderRadiusBottomRight": 0,
+        "objectImgBorderRadiusIsPixels": true,
+        "objectImgBorderRadiusTopLeft": 0,
+        "objectImgBorderRadiusTopRight": 0,
+        "objectImgBorderStyle": "solid",
+        "objectImgBorderWidth": 2,
+        "objectMargin": 10,
+        "objectOverflowIsOn": true,
+        "objectText": "Times New Roman",
+        "objectTextAlign": "center",
+        "objectTextColor": "#FFFFFFFF",
+        "objectTextPadding": 10,
+        "objectTextTextSize": 100,
+        "objectTitle": "Times New Roman",
+        "objectTitleAlign": "center",
+        "objectTitleColor": "#FFFFFFFF",
+        "objectTitleTextSize": 200,
+        "reqBgColorIsOn": true,
+        "reqFilterBgColor": "#6B6464FF",
+        "reqFilterBlur": 0,
+        "reqFilterBlurIsOn": false,
+        "reqFilterBright": 100,
+        "reqFilterBrightIsOn": false,
+        "reqFilterCont": 100,
+        "reqFilterContIsOn": false,
+        "reqFilterGray": 0,
+        "reqFilterGrayIsOn": false,
+        "reqFilterHue": 0,
+        "reqFilterHueIsOn": false,
+        "reqFilterInvert": "50",
+        "reqFilterInvertIsOn": false,
+        "reqFilterOpac": "25",
+        "reqFilterOpacIsOn": false,
+        "reqFilterSatur": 1,
+        "reqFilterSaturIsOn": false,
+        "reqFilterSepia": 0,
+        "reqFilterSepiaIsOn": false,
+        "reqFilterVisibleIsOn": false,
+        "rowBackgroundImage": "",
+        "rowBgColor": "#FFFFFFFF",
+        "rowBgColorIsOn": false,
+        "rowBodyMarginBottom": 25,
+        "rowBodyMarginSides": 1,
+        "rowBodyMarginTop": 25,
+        "rowBorderColor": "#FFEEDDFF",
+        "rowBorderIsOn": false,
+        "rowBorderRadiusBottomLeft": 0,
+        "rowBorderRadiusBottomRight": 0,
+        "rowBorderRadiusIsPixels": true,
+        "rowBorderRadiusTopLeft": 0,
+        "rowBorderRadiusTopRight": 0,
+        "rowBorderStyle": "solid",
+        "rowBorderWidth": 2,
+        "rowButtonXPadding": 0,
+        "rowButtonYPadding": 0,
+        "rowDropShadowBlur": 0,
+        "rowDropShadowColor": "#FFFFEEFF",
+        "rowDropShadowH": 0,
+        "rowDropShadowIsOn": false,
+        "rowDropShadowSpread": 0,
+        "rowDropShadowV": 0,
+        "rowImageMarginTop": 0,
+        "rowImageWidth": 100,
+        "rowImgBorderColor": "red",
+        "rowImgBorderIsOn": false,
+        "rowImgBorderRadiusBottomLeft": 0,
+        "rowImgBorderRadiusBottomRight": 0,
+        "rowImgBorderRadiusIsPixels": true,
+        "rowImgBorderRadiusTopLeft": 0,
+        "rowImgBorderRadiusTopRight": 0,
+        "rowImgBorderStyle": "solid",
+        "rowImgBorderWidth": 2,
+        "rowMargin": 10,
+        "rowOverflowIsOn": true,
+        "rowText": "Times New Roman",
+        "rowTextAlign": "center",
+        "rowTextColor": "#FFFFFFFF",
+        "rowTextPaddingX": 10,
+        "rowTextPaddingY": 5,
+        "rowTextTextSize": 100,
+        "rowTitle": "Times New Roman",
+        "rowTitleAlign": "center",
+        "rowTitleColor": "#FFFFFFFF",
+        "rowTitleTextSize": 200,
+        "scoreText": "Times New Roman",
+        "scoreTextAlign": "center",
+        "scoreTextColor": "#FFFFFFFF",
+        "scoreTextSize": 75,
+        "selBgColorIsOn": true,
+        "selFilterBgColor": "#3CAAAAFF",
+        "selFilterBlur": 0,
+        "selFilterBlurIsOn": false,
+        "selFilterBright": 100,
+        "selFilterBrightIsOn": false,
+        "selFilterCont": 100,
+        "selFilterContIsOn": false,
+        "selFilterGray": 0,
+        "selFilterGrayIsOn": false,
+        "selFilterHue": 0,
+        "selFilterHueIsOn": false,
+        "selFilterInvert": 0,
+        "selFilterInvertIsOn": false,
+        "selFilterOpac": 100,
+        "selFilterOpacIsOn": false,
+        "selFilterSatur": 1,
+        "selFilterSaturIsOn": false,
+        "selFilterSepia": 0,
+        "selFilterSepiaIsOn": false
+      },
+      "template": "1",
+      "title": "(Entity) Perks and Drawbacks",
+      "titleText": ""
     },
     {
       "allowedChoices": 0,
@@ -24465,6 +26421,44 @@
           "title": "Desire For Survival"
         },
         {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "gtmb",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "col-sm-6",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Gain:",
+              "id": "rm",
+              "isActive": false,
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-60"
+            },
+            {
+              "afterText": "CP",
+              "beforeText": "Gain:",
+              "id": "2b",
+              "isActive": false,
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-40"
+            }
+          ],
+          "template": 1,
+          "text": "At some point within a few years after your arrival (5-10), a second pair of Entities will arrive and begin a new Cycle. If the Warrior and/or Thinker are still alive, they might clash or join forces. If you have already defeated the Warrior and Thinker, they will try to take over the Shard networks for their own purposes. Take a lot of points because you'll need all the help you can get.",
+          "title": "The Cycle Begins Anew"
+        },
+        {
           "addons": [
             {
               "id": "",
@@ -24594,7 +26588,7 @@
           "multipleUseVariable": 0,
           "numMultipleTimesMinus": "0",
           "numMultipleTimesPluss": "8",
-          "objectWidth": "col-sm-6",
+          "objectWidth": "col-sm-9",
           "requireds": [],
           "scores": [],
           "template": 1,
@@ -39439,10 +41433,118 @@
               "afterText": "SP",
               "beforeText": "Cost:",
               "id": "rm",
-              "requireds": [],
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "k89b",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": false,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
               "showScore": true,
               "type": "",
               "value": "25"
+            },
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "10"
+            },
+            {
+              "afterText": "Network Capacity",
+              "beforeText": "Cost:",
+              "id": "1u",
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "1"
             }
           ],
           "template": 1,
@@ -39743,6 +41845,7 @@
         }
       ],
       "resultGroupId": "xb",
+      "rowJustify": "start",
       "styling": {
         "addonText": "Times New Roman",
         "addonTextAlign": "center",
