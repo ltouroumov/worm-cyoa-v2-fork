@@ -13761,7 +13761,7 @@
           "scores": [
             {
               "afterText": "SP",
-              "beforeText": "Cost:",
+              "beforeText": "Gain:",
               "id": "rm",
               "requireds": [],
               "showScore": true,
@@ -13788,7 +13788,7 @@
           "scores": [
             {
               "afterText": "SP",
-              "beforeText": "Cost:",
+              "beforeText": "Gain:",
               "id": "rm",
               "isActive": false,
               "requireds": [],
@@ -13816,7 +13816,7 @@
           "scores": [
             {
               "afterText": "SP",
-              "beforeText": "Cost:",
+              "beforeText": "Gain:",
               "id": "rm",
               "isActive": false,
               "requireds": [],
@@ -13844,7 +13844,7 @@
           "scores": [
             {
               "afterText": "SP",
-              "beforeText": "Cost:",
+              "beforeText": "Gain:",
               "id": "rm",
               "requireds": [],
               "showScore": true,
@@ -13871,7 +13871,7 @@
           "scores": [
             {
               "afterText": "SP",
-              "beforeText": "Cost:",
+              "beforeText": "Gain:",
               "id": "rm",
               "requireds": [],
               "showScore": true,
@@ -13898,7 +13898,7 @@
           "scores": [
             {
               "afterText": "SP",
-              "beforeText": "Cost:",
+              "beforeText": "Gain:",
               "id": "rm",
               "requireds": [],
               "showScore": true,
@@ -13925,7 +13925,7 @@
           "scores": [
             {
               "afterText": "SP",
-              "beforeText": "Cost:",
+              "beforeText": "Gain:",
               "id": "rm",
               "requireds": [],
               "showScore": true,
@@ -13952,7 +13952,7 @@
           "scores": [
             {
               "afterText": "SP",
-              "beforeText": "Cost:",
+              "beforeText": "Gain:",
               "id": "rm",
               "requireds": [],
               "showScore": true,
@@ -13979,7 +13979,7 @@
           "scores": [
             {
               "afterText": "SP",
-              "beforeText": "Cost:",
+              "beforeText": "Gain:",
               "id": "rm",
               "requireds": [],
               "showScore": true,
@@ -14006,7 +14006,7 @@
           "scores": [
             {
               "afterText": "SP",
-              "beforeText": "Cost:",
+              "beforeText": "Gain:",
               "id": "rm",
               "requireds": [],
               "showScore": true,
