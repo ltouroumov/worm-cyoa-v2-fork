@@ -14278,7 +14278,7 @@
       "id": "xam6",
       "image": "",
       "isButtonRow": false,
-      "isEditModeOn": false,
+      "isEditModeOn": true,
       "isInfoRow": false,
       "isPrivateStyling": false,
       "isRequirementOpen": false,
@@ -14306,7 +14306,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "5"
+              "value": "10"
             },
             {
               "afterText": "Network Capacity",
@@ -14343,7 +14343,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "2"
+              "value": "5"
             },
             {
               "afterText": "Network Capacity",
@@ -14352,7 +14352,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "-2"
+              "value": "-3"
             }
           ],
           "template": 1,
@@ -14379,7 +14379,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "2"
+              "value": "5"
             },
             {
               "afterText": "Network Capacity",
@@ -14388,7 +14388,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "1"
+              "value": "2"
             }
           ],
           "template": 1,
@@ -14415,7 +14415,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "2"
+              "value": "5"
             },
             {
               "afterText": "Network Capacity",
@@ -14451,7 +14451,43 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "8"
+              "value": "15"
+            },
+            {
+              "afterText": "Network Capacity",
+              "beforeText": "Cost:",
+              "id": "1u",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "3"
+            }
+          ],
+          "template": 1,
+          "text": "This Shard allows you to predict the future. Unlike most precognition Shards, this one possesses an actual precognition organ which allows it to build extremely accurate predictions. It is also capable of performing simulations as an energy saving measure.\n\nUsing the precognition organ is extremely energy intensive.",
+          "title": "The Eye"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "9dnq",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "5"
             },
             {
               "afterText": "Network Capacity",
@@ -14464,8 +14500,44 @@
             }
           ],
           "template": 1,
-          "text": "This Shard allows you to predict the future. Unlike most precognition Shards, this one possesses an actual precognition organ which allows it to build extremely accurate predictions. It is also capable of performing simulations as an energy saving measure.\n\nUsing the precognition organ is extremely energy intensive.",
-          "title": "The Eye"
+          "text": "This Shard is specialized in the creation of Shard hardware. It can use almost any material to produce a Shard much faster and cheaper than a regular Shard thanks to its specialized hardware.",
+          "title": "Factory"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "s9kv",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "5"
+            },
+            {
+              "afterText": "Network Capacity",
+              "beforeText": "Cost:",
+              "id": "1u",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "1"
+            }
+          ],
+          "template": 1,
+          "text": "This Shard is specialized in bending space. It is used by Entities for faster than light travel by using an <a href=\"https://en.wikipedia.org/wiki/Alcubierre_drive\">Alcubierre Drive</a>. ",
+          "title": "Warp"
         }
       ],
       "requireds": [
@@ -14708,7 +14780,7 @@
       },
       "template": "1",
       "title": "(Entity) Extra Shards",
-      "titleText": ""
+      "titleText": "<b>Network Capacity</b> is the amount of traffic your Shard network is able to handle. Going over that limit will overload your network (i.e. some Shard won't be able to properly communicate)."
     },
     {
       "allowedChoices": 0,
