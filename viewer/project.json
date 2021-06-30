@@ -13578,7 +13578,7 @@
             }
           ],
           "template": 1,
-          "text": "Should a host of yours experience a trauma worthy of a second trigger you can grant them just such a thing. This event will grow their power to new heights and gain new aspects. The preparation for this takes a month energy. Use the Second Triggers from the power description if applicable.",
+          "text": "Should a host of yours experience a trauma worthy of a second trigger you can grant them just such a thing. This event will grow their power to new heights and gain new aspects. The preparation for this takes a month energy.",
           "title": "Redux"
         },
         {
@@ -14278,7 +14278,7 @@
       "id": "xam6",
       "image": "",
       "isButtonRow": false,
-      "isEditModeOn": true,
+      "isEditModeOn": false,
       "isInfoRow": false,
       "isPrivateStyling": false,
       "isRequirementOpen": false,
