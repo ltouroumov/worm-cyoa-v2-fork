@@ -5225,6 +5225,263 @@
           "defaultAspectHeight": 1,
           "defaultAspectWidth": 1,
           "groups": [],
+          "id": "9d7l",
+          "image": "/worm-cyoa-v6-fork/viewer/images/obj-9d7l.jpeg",
+          "isActive": false,
+          "isVisible": true,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Gain:",
+              "id": "rm",
+              "isActive": false,
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "dstd",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "-10"
+            },
+            {
+              "afterText": "CP",
+              "beforeText": "Gain:",
+              "id": "2b",
+              "isActive": false,
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "dstd",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "-10"
+            },
+            {
+              "afterText": "SP",
+              "beforeText": "Gain:",
+              "id": "rm",
+              "isActive": false,
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "deasy",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "-15"
+            },
+            {
+              "afterText": "CP",
+              "beforeText": "Gain:",
+              "id": "2b",
+              "isActive": false,
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "deasy",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "-15"
+            },
+            {
+              "afterText": "SP",
+              "beforeText": "Gain:",
+              "id": "rm",
+              "isActive": false,
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "dhard",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "-5"
+            },
+            {
+              "afterText": "CP",
+              "beforeText": "Gain:",
+              "id": "2b",
+              "isActive": false,
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "dhard",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "-5"
+            }
+          ],
+          "template": 1,
+          "text": "This is the day Taylor Hebert, the primary focus of Wildbow's visions, was shoved into a locker and triggered with the power to control arthropods. If you don't change anything, you have about two years and five months before the remaining entity attempts to commit multiversal genocide.",
+          "title": "January 3rd, 2011"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
           "id": "1y99",
           "image": "/worm-cyoa-v6-fork/viewer/images/obj-1y99.jpeg",
           "isActive": false,
@@ -5737,6 +5994,516 @@
           "defaultAspectHeight": 1,
           "defaultAspectWidth": 1,
           "groups": [],
+          "id": "man7",
+          "image": "/worm-cyoa-v6-fork/viewer/images/obj-man7.jpeg",
+          "isActive": false,
+          "isVisible": true,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Gain:",
+              "id": "rm",
+              "isActive": false,
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "dstd",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "-5"
+            },
+            {
+              "afterText": "CP",
+              "beforeText": "Gain:",
+              "id": "2b",
+              "isActive": false,
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "dstd",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "0"
+            },
+            {
+              "afterText": "SP",
+              "beforeText": "Gain:",
+              "id": "rm",
+              "isActive": false,
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "deasy",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "-15"
+            },
+            {
+              "afterText": "CP",
+              "beforeText": "Gain:",
+              "id": "2b",
+              "isActive": false,
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "deasy",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "-5"
+            },
+            {
+              "afterText": "SP",
+              "beforeText": "Gain:",
+              "id": "rm",
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "dhard",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "0"
+            },
+            {
+              "afterText": "CP",
+              "beforeText": "Cost:",
+              "id": "2b",
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "dhard",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "5"
+            }
+          ],
+          "template": 1,
+          "text": "This is the day the Simurgh first appears and attacks Lausanne, Switzerland. If you don't change anything, you have about ten years before the remaining entity attempts to commit multiversal genocide.",
+          "title": "December 30th, 2002"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "6byd",
+          "image": "/worm-cyoa-v6-fork/viewer/images/obj-6byd.png",
+          "isActive": false,
+          "isVisible": true,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Gain:",
+              "id": "rm",
+              "isActive": false,
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "dstd",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "-5"
+            },
+            {
+              "afterText": "CP",
+              "beforeText": "Gain:",
+              "id": "2b",
+              "isActive": false,
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "dstd",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "0"
+            },
+            {
+              "afterText": "SP",
+              "beforeText": "Gain:",
+              "id": "rm",
+              "isActive": false,
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "deasy",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "-15"
+            },
+            {
+              "afterText": "CP",
+              "beforeText": "Gain:",
+              "id": "2b",
+              "isActive": false,
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "deasy",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "-5"
+            },
+            {
+              "afterText": "SP",
+              "beforeText": "Gain:",
+              "id": "rm",
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "dhard",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "0"
+            },
+            {
+              "afterText": "CP",
+              "beforeText": "Cost:",
+              "id": "2b",
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "dhard",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "5"
+            }
+          ],
+          "template": 1,
+          "text": "The Protactorate and PRT deploy to Ellisburg to attempt to eliminate Nilbog. At the end of the day, all but two of the PRT agents will have been killed and Ellisburg will be quarantined and Nilbog designated as an S-Class threat.",
+          "title": "February 2nd, 2001"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
           "id": "boxl",
           "image": "/worm-cyoa-v6-fork/viewer/images/obj-boxl.jpeg",
           "isActive": false,
@@ -6077,6 +6844,525 @@
           "template": 1,
           "text": "This is the day before Leviathan attacks Kyushu. November 2nd is also the first appearance of Lung, who would do more damage to Leviathan than any other Cape before him. By default, you have nearly fourteen years before the remaining entity goes on its multiversal genocide.",
           "title": "November 1st, 1999"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "taka",
+          "image": "/worm-cyoa-v6-fork/viewer/images/obj-taka.jpeg",
+          "isActive": false,
+          "isVisible": true,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Gain:",
+              "id": "rm",
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "deasy",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "-5"
+            },
+            {
+              "afterText": "CP",
+              "beforeText": "Gain:",
+              "id": "2b",
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "deasy",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "-5"
+            },
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "dhard",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "5"
+            },
+            {
+              "afterText": "CP",
+              "beforeText": "Cost:",
+              "id": "2b",
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "dhard",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "5"
+            }
+          ],
+          "template": 1,
+          "text": "This is the day Leviathan first appears and attacks Oslo, Norway. If you don't change anything, you have about seventeen years before the remaining entity attempts to commit multiversal genocide.",
+          "title": "June 9th, 1996"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "ylij",
+          "image": "/worm-cyoa-v6-fork/viewer/images/obj-ylij.jpeg",
+          "isActive": false,
+          "isVisible": true,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Gain:",
+              "id": "rm",
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "deasy",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "-5"
+            },
+            {
+              "afterText": "CP",
+              "beforeText": "Gain:",
+              "id": "2b",
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "deasy",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "-5"
+            },
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "dhard",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "5"
+            },
+            {
+              "afterText": "CP",
+              "beforeText": "Cost:",
+              "id": "2b",
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "dhard",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "5"
+            }
+          ],
+          "template": 1,
+          "text": "This is the day Behemoth first appears and attacks the Marun oil field in Iran. If you don't change anything, you have about twenty years before the remaining entity attempts to commit multiversal genocide.",
+          "title": "December 13th, 1992"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "bney",
+          "image": "/worm-cyoa-v6-fork/viewer/images/obj-bney.jpeg",
+          "isActive": false,
+          "isVisible": true,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Gain:",
+              "id": "rm",
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "deasy",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "-5"
+            },
+            {
+              "afterText": "CP",
+              "beforeText": "Gain:",
+              "id": "2b",
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "deasy",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "-5"
+            },
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "dhard",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "5"
+            },
+            {
+              "afterText": "CP",
+              "beforeText": "Cost:",
+              "id": "2b",
+              "requireds": [
+                {
+                  "afterText": "choice",
+                  "beforeText": "Required:",
+                  "id": "",
+                  "operator": "",
+                  "orRequired": [
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    },
+                    {
+                      "req": ""
+                    }
+                  ],
+                  "reqId": "dhard",
+                  "reqId1": "",
+                  "reqId2": "",
+                  "reqId3": "",
+                  "reqPoints": 0,
+                  "required": true,
+                  "requireds": [],
+                  "showRequired": false,
+                  "type": "id"
+                }
+              ],
+              "showScore": true,
+              "type": "",
+              "value": "5"
+            }
+          ],
+          "template": 1,
+          "text": "This is the day that Alexandria, Eidolon, Hero, and Legend form the Protectorate. If you don't change anything, you have about twenty-five years before the remaining entity attempts to commit multiversal genocide.",
+          "title": "May 1st, 1988"
         },
         {
           "addons": [],
@@ -49481,12 +50767,12 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "-12"
+              "value": "-15"
             }
           ],
           "template": 1,
-          "text": "Choose any location that has been quarantined due to a Simurgh attack prior to April, 2011, you'll find yourself there.",
-          "title": "Simurgh Containment Zone"
+          "text": "Choose any location that is quarantined at the time of your arrival. This can be a Simurgh Contaiment Zone, Ellisburg, Eagleton, etc.",
+          "title": "Containment Zone"
         },
         {
           "addons": [],
