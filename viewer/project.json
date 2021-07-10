@@ -38816,6 +38816,9 @@
                 },
                 {
                   "req": "lv3m"
+                },
+                {
+                  "req": "y407"
                 }
               ],
               "reqId": "",
@@ -44289,29 +44292,6 @@
               "operator": "",
               "orRequired": [
                 {
-                  "req": "5zy0"
-                },
-                {
-                  "req": "g2oz"
-                }
-              ],
-              "reqId": "",
-              "reqId1": "",
-              "reqId2": "",
-              "reqId3": "",
-              "reqPoints": 0,
-              "required": true,
-              "requireds": [],
-              "showRequired": true,
-              "type": "or"
-            },
-            {
-              "afterText": "",
-              "beforeText": "Required:",
-              "id": "",
-              "operator": "",
-              "orRequired": [
-                {
                   "req": "y407"
                 },
                 {
@@ -44341,11 +44321,11 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "5"
+              "value": "20"
             }
           ],
           "template": 1,
-          "text": "Your Arcanist, Artificer, and Alchemist synergize with Vision or Omniscience giving you access to more magic systems as well as the ability to design more. You spell types are no longer limited, you can now cast buffs, auras, etc. You enchantment cap is raised to five. With this, you can create truly powerful spells that could potentially destroy an Entity.",
+          "text": "Your Arcanist, Artificer, and Alchemist are upgraded to the next level giving you access to more magic systems as well as the ability to design more. You spell types are no longer limited, you can now cast buffs, auras, etc. You enchantment cap is raised to five. With this, you can create truly powerful spells that could potentially destroy an Entity.",
           "title": "Archmage"
         },
         {
