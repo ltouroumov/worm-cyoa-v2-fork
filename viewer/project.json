@@ -27605,7 +27605,7 @@
           "isActive": false,
           "isVisible": true,
           "multipleUseVariable": 0,
-          "objectWidth": "col-sm-6",
+          "objectWidth": "col-md-4",
           "requireds": [
             {
               "afterText": "",
@@ -27886,13 +27886,72 @@
           "defaultAspectHeight": 1,
           "defaultAspectWidth": 1,
           "groups": [],
-          "id": "gtmb",
+          "id": "45u6",
           "image": "",
           "isActive": false,
           "isVisible": true,
           "multipleUseVariable": 0,
-          "objectWidth": "col-sm-6",
-          "requireds": [],
+          "objectWidth": "col-md-4",
+          "requireds": [
+            {
+              "afterText": "",
+              "beforeText": "Required:",
+              "id": "",
+              "operator": "",
+              "orRequired": [
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                }
+              ],
+              "reqId": "fu70",
+              "reqId1": "",
+              "reqId2": "",
+              "reqId3": "",
+              "reqPoints": 0,
+              "required": true,
+              "requireds": [],
+              "showRequired": true,
+              "type": "id"
+            },
+            {
+              "afterText": "choice",
+              "beforeText": "Required:",
+              "id": "",
+              "operator": "",
+              "orRequired": [
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                }
+              ],
+              "reqId": "gtmb",
+              "reqId1": "",
+              "reqId2": "",
+              "reqId3": "",
+              "reqPoints": 0,
+              "required": false,
+              "requireds": [],
+              "showRequired": false,
+              "type": "id"
+            }
+          ],
           "scores": [
             {
               "afterText": "SP",
@@ -27902,7 +27961,75 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "-60"
+              "value": "-30"
+            },
+            {
+              "afterText": "CP",
+              "beforeText": "Gain:",
+              "id": "2b",
+              "isActive": false,
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-20"
+            }
+          ],
+          "template": 1,
+          "text": "Instead of arriving after you, the other pair of entities arrived at the same time as the Warrior and Thinker. The negotiated a join cycle and seeded their Shards on other earths. \n\nThe new Cycle focuses on interaction between parallel earths seeded with the various Entities' Shards. The turning point for Earth Bet is the discovery of Professor Haywire, instead of being stopped Cauldron ensures that he is treated as a strategic asset as Bet will have to play its part on the interdimensional scene. While some neighboring dimensions are friendly, other are ruled by empires hell bent on conquest.\n\nSurprisingly, most major events on Earth Bet remain unchanged (so that you do not have to rewrite canon entirely).",
+          "title": "The Neighbors"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "gtmb",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "col-md-4",
+          "requireds": [
+            {
+              "afterText": "choice",
+              "beforeText": "Required:",
+              "id": "",
+              "operator": "",
+              "orRequired": [
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                }
+              ],
+              "reqId": "45u6",
+              "reqId1": "",
+              "reqId2": "",
+              "reqId3": "",
+              "reqPoints": 0,
+              "required": false,
+              "requireds": [],
+              "showRequired": false,
+              "type": "id"
+            }
+          ],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Gain:",
+              "id": "rm",
+              "isActive": false,
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-40"
             },
             {
               "afterText": "CP",
@@ -27918,6 +28045,23 @@
           "template": 1,
           "text": "At some point within a few years after your arrival (5-10), a second pair of Entities will arrive and begin a new Cycle. If the Warrior and/or Thinker are still alive, they might clash or join forces. If you have already defeated the Warrior and Thinker, they will try to take over the Shard networks for their own purposes. Take a lot of points because you'll need all the help you can get.",
           "title": "The Cycle Begins Anew"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "08kd",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "col-sm-6",
+          "requireds": [],
+          "scores": [],
+          "template": 1,
+          "text": "Your first day on Earth Bet (or wherever you arrive) will suck.",
+          "title": "Worst Day Ever"
         },
         {
           "addons": [
@@ -28049,7 +28193,7 @@
           "multipleUseVariable": 0,
           "numMultipleTimesMinus": "0",
           "numMultipleTimesPluss": "8",
-          "objectWidth": "col-sm-9",
+          "objectWidth": "col-sm-6",
           "requireds": [],
           "scores": [],
           "template": 1,
@@ -29350,6 +29494,354 @@
       "template": "1",
       "title": "Nemesis Choice",
       "titleText": "Choose the alignment of your Nemeses"
+    },
+    {
+      "allowedChoices": 0,
+      "buttonId": "",
+      "buttonRandom": false,
+      "buttonRandomNumber": 1,
+      "buttonText": "Click",
+      "buttonType": true,
+      "currentChoices": 1,
+      "defaultAspectHeight": 1,
+      "defaultAspectWidth": 1,
+      "id": "h2ju",
+      "image": "",
+      "isButtonRow": false,
+      "isEditModeOn": false,
+      "isInfoRow": false,
+      "isPrivateStyling": false,
+      "isRequirementOpen": false,
+      "isResultRow": false,
+      "objectWidth": "col-md-4",
+      "objects": [
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "2w4z",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-10"
+            },
+            {
+              "afterText": "CP",
+              "beforeText": "Cost:",
+              "id": "2b",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-10"
+            }
+          ],
+          "template": 1,
+          "text": "You will have an eventful day, meet lots of interesting people, and maybe make an enemy or two. You are guaranteed to survive this day.",
+          "title": "Eventful Day"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "4tg6",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-20"
+            },
+            {
+              "afterText": "CP",
+              "beforeText": "Cost:",
+              "id": "2b",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-20"
+            }
+          ],
+          "template": 1,
+          "text": "You will have a pretty bad day. If something could go wrong it will. You'll crash through the roof of a Merchant rave party with every cape in attendance, stumble upon an Empire rally or dog fighting ring, or something of that order. You'll most likely have to fight your way out, or pack a good pair of running shoes.\n\n(If you picked Corona Pollentia you have a high change to trigger on that day)",
+          "title": "Bad Day"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "iatt",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-40"
+            },
+            {
+              "afterText": "CP",
+              "beforeText": "Cost:",
+              "id": "2b",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-40"
+            }
+          ],
+          "template": 1,
+          "text": "You will have the worst day ever. It will be ten times worse than the bad day and you'll really have to use all your wits to survive the day.\n\n(If you picked Corona Pollentia you are certain to trigger on that day, provided your survive it)",
+          "title": "Worst Day"
+        }
+      ],
+      "requireds": [
+        {
+          "afterText": "choice",
+          "beforeText": "Required:",
+          "id": "",
+          "operator": "",
+          "orRequired": [
+            {
+              "req": ""
+            },
+            {
+              "req": ""
+            },
+            {
+              "req": ""
+            },
+            {
+              "req": ""
+            }
+          ],
+          "reqId": "b0pr",
+          "reqId1": "",
+          "reqId2": "",
+          "reqId3": "",
+          "reqPoints": 0,
+          "required": true,
+          "requireds": [],
+          "showRequired": false,
+          "type": "id"
+        },
+        {
+          "afterText": "choice",
+          "beforeText": "Required:",
+          "id": "",
+          "operator": "",
+          "orRequired": [
+            {
+              "req": ""
+            },
+            {
+              "req": ""
+            },
+            {
+              "req": ""
+            },
+            {
+              "req": ""
+            }
+          ],
+          "reqId": "08kd",
+          "reqId1": "",
+          "reqId2": "",
+          "reqId3": "",
+          "reqPoints": 0,
+          "required": true,
+          "requireds": [],
+          "showRequired": false,
+          "type": "id"
+        }
+      ],
+      "resultGroupId": "",
+      "styling": {
+        "addonText": "Times New Roman",
+        "addonTextAlign": "center",
+        "addonTextColor": "#FFFFFFFF",
+        "addonTextTextSize": 100,
+        "addonTitle": "Times New Roman",
+        "addonTitleAlign": "center",
+        "addonTitleColor": "#FFFFFFFF",
+        "addonTitleTextSize": 200,
+        "backPackWidth": 1200,
+        "backgroundColor": "#000000FF",
+        "backgroundImage": "",
+        "barBackgroundColor": "#FFFFFFFF",
+        "barMargin": 0,
+        "barPadding": 0,
+        "barTextColor": "#000000",
+        "barTextFont": "Times New Roman",
+        "barTextMargin": 0,
+        "barTextPadding": 17,
+        "barTextSize": 15,
+        "objectBackgroundImage": "",
+        "objectBgColor": "#FFFFFFFF",
+        "objectBgColorIsOn": false,
+        "objectBorderColor": "#FDFDFDFF",
+        "objectBorderIsOn": true,
+        "objectBorderRadiusBottomLeft": "5",
+        "objectBorderRadiusBottomRight": "5",
+        "objectBorderRadiusIsPixels": true,
+        "objectBorderRadiusTopLeft": "5",
+        "objectBorderRadiusTopRight": "5",
+        "objectBorderStyle": "solid",
+        "objectBorderWidth": 2,
+        "objectDropShadowBlur": 0,
+        "objectDropShadowColor": "#FFEF00FF",
+        "objectDropShadowH": 0,
+        "objectDropShadowIsOn": false,
+        "objectDropShadowSpread": 0,
+        "objectDropShadowV": 0,
+        "objectHeight": true,
+        "objectImageMarginBottom": 0,
+        "objectImageMarginTop": 0,
+        "objectImageWidth": 100,
+        "objectImgBorderColor": "red",
+        "objectImgBorderIsOn": false,
+        "objectImgBorderRadiusBottomLeft": 0,
+        "objectImgBorderRadiusBottomRight": 0,
+        "objectImgBorderRadiusIsPixels": true,
+        "objectImgBorderRadiusTopLeft": 0,
+        "objectImgBorderRadiusTopRight": 0,
+        "objectImgBorderStyle": "solid",
+        "objectImgBorderWidth": 2,
+        "objectMargin": 10,
+        "objectOverflowIsOn": true,
+        "objectText": "Times New Roman",
+        "objectTextAlign": "center",
+        "objectTextColor": "#FFFFFFFF",
+        "objectTextPadding": 10,
+        "objectTextTextSize": 100,
+        "objectTitle": "Times New Roman",
+        "objectTitleAlign": "center",
+        "objectTitleColor": "#FFFFFFFF",
+        "objectTitleTextSize": 200,
+        "reqBgColorIsOn": true,
+        "reqFilterBgColor": "#6B6464FF",
+        "reqFilterBlur": 0,
+        "reqFilterBlurIsOn": false,
+        "reqFilterBright": 100,
+        "reqFilterBrightIsOn": false,
+        "reqFilterCont": 100,
+        "reqFilterContIsOn": false,
+        "reqFilterGray": 0,
+        "reqFilterGrayIsOn": false,
+        "reqFilterHue": 0,
+        "reqFilterHueIsOn": false,
+        "reqFilterInvert": "50",
+        "reqFilterInvertIsOn": false,
+        "reqFilterOpac": "25",
+        "reqFilterOpacIsOn": false,
+        "reqFilterSatur": 1,
+        "reqFilterSaturIsOn": false,
+        "reqFilterSepia": 0,
+        "reqFilterSepiaIsOn": false,
+        "reqFilterVisibleIsOn": false,
+        "rowBackgroundImage": "",
+        "rowBgColor": "#FFFFFFFF",
+        "rowBgColorIsOn": false,
+        "rowBodyMarginBottom": 25,
+        "rowBodyMarginSides": 1,
+        "rowBodyMarginTop": 25,
+        "rowBorderColor": "#FFEEDDFF",
+        "rowBorderIsOn": false,
+        "rowBorderRadiusBottomLeft": 0,
+        "rowBorderRadiusBottomRight": 0,
+        "rowBorderRadiusIsPixels": true,
+        "rowBorderRadiusTopLeft": 0,
+        "rowBorderRadiusTopRight": 0,
+        "rowBorderStyle": "solid",
+        "rowBorderWidth": 2,
+        "rowButtonXPadding": 0,
+        "rowButtonYPadding": 0,
+        "rowDropShadowBlur": 0,
+        "rowDropShadowColor": "#FFFFEEFF",
+        "rowDropShadowH": 0,
+        "rowDropShadowIsOn": false,
+        "rowDropShadowSpread": 0,
+        "rowDropShadowV": 0,
+        "rowImageMarginTop": 0,
+        "rowImageWidth": 100,
+        "rowImgBorderColor": "red",
+        "rowImgBorderIsOn": false,
+        "rowImgBorderRadiusBottomLeft": 0,
+        "rowImgBorderRadiusBottomRight": 0,
+        "rowImgBorderRadiusIsPixels": true,
+        "rowImgBorderRadiusTopLeft": 0,
+        "rowImgBorderRadiusTopRight": 0,
+        "rowImgBorderStyle": "solid",
+        "rowImgBorderWidth": 2,
+        "rowMargin": 10,
+        "rowOverflowIsOn": true,
+        "rowText": "Times New Roman",
+        "rowTextAlign": "center",
+        "rowTextColor": "#FFFFFFFF",
+        "rowTextPaddingX": 10,
+        "rowTextPaddingY": 5,
+        "rowTextTextSize": 100,
+        "rowTitle": "Times New Roman",
+        "rowTitleAlign": "center",
+        "rowTitleColor": "#FFFFFFFF",
+        "rowTitleTextSize": 200,
+        "scoreText": "Times New Roman",
+        "scoreTextAlign": "center",
+        "scoreTextColor": "#FFFFFFFF",
+        "scoreTextSize": 75,
+        "selBgColorIsOn": true,
+        "selFilterBgColor": "#3CAAAAFF",
+        "selFilterBlur": 0,
+        "selFilterBlurIsOn": false,
+        "selFilterBright": 100,
+        "selFilterBrightIsOn": false,
+        "selFilterCont": 100,
+        "selFilterContIsOn": false,
+        "selFilterGray": 0,
+        "selFilterGrayIsOn": false,
+        "selFilterHue": 0,
+        "selFilterHueIsOn": false,
+        "selFilterInvert": 0,
+        "selFilterInvertIsOn": false,
+        "selFilterOpac": 100,
+        "selFilterOpacIsOn": false,
+        "selFilterSatur": 1,
+        "selFilterSaturIsOn": false,
+        "selFilterSepia": 0,
+        "selFilterSepiaIsOn": false
+      },
+      "template": "1",
+      "title": "Worst Day Ever",
+      "titleText": ""
     },
     {
       "allowedChoices": 1,
