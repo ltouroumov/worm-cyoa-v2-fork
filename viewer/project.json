@@ -29497,13 +29497,13 @@
       "titleText": "Choose the alignment of your Nemeses"
     },
     {
-      "allowedChoices": 0,
+      "allowedChoices": 1,
       "buttonId": "",
       "buttonRandom": false,
       "buttonRandomNumber": 1,
       "buttonText": "Click",
       "buttonType": true,
-      "currentChoices": 1,
+      "currentChoices": 0,
       "defaultAspectHeight": 1,
       "defaultAspectWidth": 1,
       "id": "h2ju",
