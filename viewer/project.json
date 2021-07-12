@@ -29509,7 +29509,7 @@
       "id": "h2ju",
       "image": "",
       "isButtonRow": false,
-      "isEditModeOn": false,
+      "isEditModeOn": true,
       "isInfoRow": false,
       "isPrivateStyling": false,
       "isRequirementOpen": false,
@@ -29694,7 +29694,7 @@
           ],
           "template": 1,
           "text": "You will have to contend with a single Endbringer right as you arrive, which one is random. You might have an hour or so of grace since the Endbringer will need some time to get to your location. Use your preparation time wisely.\n\n(If you picked Corona Pollentia, don't. You will die a horrible horrible death)",
-          "title": ""
+          "title": "Worthy Opponent"
         },
         {
           "addons": [],
