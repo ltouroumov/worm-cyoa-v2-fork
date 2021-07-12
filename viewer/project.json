@@ -29531,7 +29531,7 @@
           "scores": [
             {
               "afterText": "SP",
-              "beforeText": "Cost:",
+              "beforeText": "Gain:",
               "id": "rm",
               "requireds": [],
               "showScore": true,
@@ -29540,7 +29540,7 @@
             },
             {
               "afterText": "CP",
-              "beforeText": "Cost:",
+              "beforeText": "Gain:",
               "id": "2b",
               "requireds": [],
               "showScore": true,
@@ -29567,7 +29567,7 @@
           "scores": [
             {
               "afterText": "SP",
-              "beforeText": "Cost:",
+              "beforeText": "Gain:",
               "id": "rm",
               "requireds": [],
               "showScore": true,
@@ -29576,7 +29576,7 @@
             },
             {
               "afterText": "CP",
-              "beforeText": "Cost:",
+              "beforeText": "Gain:",
               "id": "2b",
               "requireds": [],
               "showScore": true,
@@ -29603,7 +29603,7 @@
           "scores": [
             {
               "afterText": "SP",
-              "beforeText": "Cost:",
+              "beforeText": "Gain:",
               "id": "rm",
               "requireds": [],
               "showScore": true,
@@ -29612,7 +29612,7 @@
             },
             {
               "afterText": "CP",
-              "beforeText": "Cost:",
+              "beforeText": "Gain:",
               "id": "2b",
               "requireds": [],
               "showScore": true,
@@ -29623,6 +29623,114 @@
           "template": 1,
           "text": "You will have the worst day ever. It will be ten times worse than the bad day and you'll really have to use all your wits to survive the day.\n\n(If you picked Corona Pollentia you are certain to trigger on that day, provided your survive it)",
           "title": "Worst Day"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "mdb9",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Gain:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-40"
+            },
+            {
+              "afterText": "CP",
+              "beforeText": "Gain:",
+              "id": "2b",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-40"
+            }
+          ],
+          "template": 1,
+          "text": "The Slaughterhouse Nine have <i>conveniently</i> decided to visit your place of arrival and will interrupt whatever they were doing at the time. \n\n(If you picked Corona Pollentia you are certain to trigger on that day, provided your survive it and remain sane)",
+          "title": "Tea Party with the Nine"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "dahr",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Gain:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-60"
+            },
+            {
+              "afterText": "CP",
+              "beforeText": "Gain:",
+              "id": "2b",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-60"
+            }
+          ],
+          "template": 1,
+          "text": "You will have to contend with a single Endbringer right as you arrive, which one is random. You might have an hour or so of grace since the Endbringer will need some time to get to your location. Use your preparation time wisely.\n\n(If you picked Corona Pollentia, don't. You will die a horrible horrible death)",
+          "title": ""
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "rjo2",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Gain:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-80"
+            },
+            {
+              "afterText": "CP",
+              "beforeText": "Gain:",
+              "id": "2b",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "-80"
+            }
+          ],
+          "template": 1,
+          "text": "You will have to contend with all three Endbringers at once right as you arrive. You might have an hour or so of grace since the Endbringers will need some time to get to your location. Use your preparation time wisely.\n\n(If you picked Corona Pollentia, don't. You will die a horrible horrible death)",
+          "title": "Ultimate Showdown of Ultimate Destiny"
         }
       ],
       "requireds": [
