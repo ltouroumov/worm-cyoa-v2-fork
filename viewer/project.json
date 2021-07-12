@@ -29509,7 +29509,7 @@
       "id": "h2ju",
       "image": "",
       "isButtonRow": false,
-      "isEditModeOn": true,
+      "isEditModeOn": false,
       "isInfoRow": false,
       "isPrivateStyling": false,
       "isRequirementOpen": false,
@@ -29608,7 +29608,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "-40"
+              "value": "-30"
             },
             {
               "afterText": "CP",
@@ -29617,11 +29617,11 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "-40"
+              "value": "-30"
             }
           ],
           "template": 1,
-          "text": "You will have the worst day ever. It will be ten times worse than the bad day and you'll really have to use all your wits to survive the day.\n\n(If you picked Corona Pollentia you are certain to trigger on that day, provided your survive it)",
+          "text": "You will have the worst day ever. It will be ten times worse than the bad day and you'll really have to use all your wits to survive the day.\n\n(If you picked Corona Pollentia you are certain to trigger on that day, provided you survive it)",
           "title": "Worst Day"
         },
         {
@@ -29644,7 +29644,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "-40"
+              "value": "-35"
             },
             {
               "afterText": "CP",
@@ -29653,11 +29653,11 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "-40"
+              "value": "-35"
             }
           ],
           "template": 1,
-          "text": "The Slaughterhouse Nine have <i>conveniently</i> decided to visit your place of arrival and will interrupt whatever they were doing at the time. \n\n(If you picked Corona Pollentia you are certain to trigger on that day, provided your survive it and remain sane)",
+          "text": "The Slaughterhouse Nine have <i>conveniently</i> decided to visit your place of arrival and will interrupt whatever they were doing at the time. \n\n(If you picked Corona Pollentia you are certain to trigger on that day, provided you survive it and remain sane)",
           "title": "Tea Party with the Nine"
         },
         {
@@ -29680,7 +29680,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "-60"
+              "value": "-40"
             },
             {
               "afterText": "CP",
@@ -29689,7 +29689,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "-60"
+              "value": "-40"
             }
           ],
           "template": 1,
@@ -29716,7 +29716,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "-80"
+              "value": "-60"
             },
             {
               "afterText": "CP",
@@ -29725,7 +29725,7 @@
               "requireds": [],
               "showScore": true,
               "type": "",
-              "value": "-80"
+              "value": "-60"
             }
           ],
           "template": 1,
