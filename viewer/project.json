@@ -46911,7 +46911,7 @@
       "id": "zg2f",
       "image": "",
       "isButtonRow": false,
-      "isEditModeOn": false,
+      "isEditModeOn": true,
       "isInfoRow": false,
       "isPrivateStyling": false,
       "isRequirementOpen": false,
@@ -48184,7 +48184,7 @@
             }
           ],
           "template": 1,
-          "text": "You have the ability to cast spells in with variety of magic that can reproduce the effect of non-Tinker powers. While your Shard provides you with a basic library of spells in each system and an intuitive knowledge of them, you will have to research and invent more powerful spells. \nWhile this power is versatile it only allows casting instant or sustained spells and their maximum power is still limited. Your spells will not be stronger than what Eidolon could use in his prime.",
+          "text": "You have the ability to cast spells in with variety of magic that can reproduce the effect of non-Tinker powers. While your Shard provides you with a basic library of spells in each system and an intuitive knowledge of them, you will have to research and invent more powerful spells. Your spells will not be stronger than what Eidolon could do in his prime.\n\nYou have a pool of energy to cast spells, you have enough to cast your most powerful spells a dozen times in a short time span. The pool takes 30 minutes to fully recharge. Permanent spells like summons, buffs, and auras reserve part if your reserve while they are active and release the energy when they are cancelled or expire.",
           "title": "(Trump) Arcanist"
         },
         {
@@ -48250,7 +48250,7 @@
             }
           ],
           "template": 1,
-          "text": "You can enchant objects with non-Tinker powers by touching them, with a maximum of three enchantments on a single object. You can choose whether the object grants the wielder use of the power, or has a variant of the power itself. This power does not allow creating Variable Trump powers like Eidolon, picking from a fixed set is possible like Othala's power.\n\nTo enchant an object you must first create a template by either observing a parahuman in action or by asking your Shard to come up with one then spend an amount of time in contact with the object to empower it, the more powerful the power the longer it takes, from 20 minutes for a simple power to 5 weeks for a very potent one.\n\nThe research time depends on how visible the parahuman's power is. Laserdream's lasers would take 30 minutes while Tattletale's power would take days of direct observation. Power Sight significantly reduces the time.",
+          "text": "You can enchant objects with non-Tinker powers by touching them, with a maximum of three enchantments on a single object. You can choose whether the object grants the wielder use of the power, or has a variant of the power itself. This power does not allow creating Variable Trump powers like Eidolon, picking from a fixed set is possible like Othala's power.\n\nTo enchant an object you need a pattern and enough charges to empower the object. Patterns can be researched by tasking your Shard to research a power, this usually takes 6-8 hours per power. You can have up to three concurrent research. You gain 12 charges (18 with Negentropy) every day at midnight. Charges do not expire.\n\nThe strength of the power is proportional to the number of charges invested, with the minimum being 3 charges. The efficiency of charges drops by 20% every 36 charges invested into a single power up to a maximum of 216. It takes 30 seconds to empower an object regardless of the number of charges used",
           "title": "(Trump/Tinker) Artificer"
         },
         {
@@ -48316,7 +48316,7 @@
             }
           ],
           "template": 1,
-          "text": "You can create potions which will have power-like effects when consumed. Natural ingredients as well as brewing equipment are required to create the potions. Consuming too many potions in a short amount of time creates Toxicity and can have adverse health effects on the user.",
+          "text": "You can create potions from formulas which will have power-like effects when consumed and the ability to create transmutation circle to change materials into others.\n\nYou have intuitive knowledge of how to develop new formulas. Natural ingredients as well as brewing equipment are required to create the potions. Consuming too many potions in a short amount of time creates Toxicity and can have adverse health effects on the user. The effect of your potions will fade once it's purged from the drinker's blood.\n\nYou have intuitive knowledge of how to create transmutation circle. To perform a transmutation, you need to inscribe the circle on a surface and place the required ingredients inside then touch the circle to activate it. You cannot create materials with power-like properties unless you can study them, this applies to Tinker materials (like alloys).",
           "title": "(Trump/Tinker) Alchemist"
         },
         {
@@ -54949,7 +54949,7 @@
       "id": "qldk",
       "image": "",
       "isButtonRow": false,
-      "isEditModeOn": false,
+      "isEditModeOn": true,
       "isInfoRow": false,
       "isPrivateStyling": false,
       "isRequirementOpen": false,
@@ -57095,7 +57095,7 @@
             }
           ],
           "template": 1,
-          "text": "Your Arcanist, Artificer, and Alchemist are upgraded to the next level giving you access to more magic systems as well as the ability to design more. You spell types are no longer limited, you can now cast buffs, auras, etc. You enchantment cap is raised to five. With this, you can create truly powerful spells that could potentially destroy an Entity.",
+          "text": "Your Arcanist, Artificer, and Alchemist are upgraded to the next level.\n\nYou access to more magic systems as well as the ability to design your own. Your energy pool and recharge rate are multiplied by 10. Your spells are no longer limited in strength.\n\nYour enchantment cap is raised to five and you generate 6 more charges per day.\n\nYou can create potions that can have permanent effect on the drinker. You can transmute metamaterials that are more easily enchanted, or that can conduct, store, or enhance spells, as well as various power-like effects.\n\nWith this, you could potentially destroy an Entity if you put your mind to it.",
           "title": "Archmage"
         },
         {
