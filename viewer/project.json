@@ -14727,6 +14727,24 @@
           "defaultAspectHeight": 1,
           "defaultAspectWidth": 1,
           "groups": [],
+          "id": "b39c",
+          "image": "",
+          "isActive": false,
+          "isNotSelectable": true,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "col-12",
+          "requireds": [],
+          "scores": [],
+          "template": 1,
+          "text": "",
+          "title": "Perks"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
           "id": "u1vu",
           "image": "",
           "isActive": false,
@@ -14787,7 +14805,37 @@
           "isVisible": true,
           "multipleUseVariable": 0,
           "objectWidth": "",
-          "requireds": [],
+          "requireds": [
+            {
+              "afterText": "",
+              "beforeText": "Incompatible:",
+              "id": "",
+              "operator": "",
+              "orRequired": [
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                }
+              ],
+              "reqId": "26ri",
+              "reqId1": "",
+              "reqId2": "",
+              "reqId3": "",
+              "reqPoints": 0,
+              "required": false,
+              "requireds": [],
+              "showRequired": true,
+              "type": "id"
+            }
+          ],
           "scores": [
             {
               "afterText": "SP",
@@ -15002,7 +15050,7 @@
           "isActive": false,
           "isVisible": true,
           "multipleUseVariable": 0,
-          "objectWidth": "col-sm-6",
+          "objectWidth": "",
           "requireds": [
             {
               "afterText": "",
@@ -15048,6 +15096,81 @@
           "template": 1,
           "text": "You can subsume the shard of anyone your host kills. This lets you use the powers of those shards as replacements when making powersets for new hosts. If you gain the right shards you could become a new entity someday. You also subsume the shards of parahumans who cluster trigger with one of your hosts. You can use the perks from this section on hosts of subsumed shards.",
           "title": "A New God"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "26ri",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [
+            {
+              "afterText": "",
+              "beforeText": "Incompatible:",
+              "id": "",
+              "operator": "",
+              "orRequired": [
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                }
+              ],
+              "reqId": "4rmk",
+              "reqId1": "",
+              "reqId2": "",
+              "reqId3": "",
+              "reqPoints": 0,
+              "required": false,
+              "requireds": [],
+              "showRequired": true,
+              "type": "id"
+            }
+          ],
+          "scores": [
+            {
+              "afterText": "SP",
+              "beforeText": "Cost:",
+              "id": "rm",
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "10"
+            }
+          ],
+          "template": 1,
+          "text": "Something went wrong, instead of a normal connection you have become the host as well. Maybe they had severe brain damage or their trigger was so traumatic that their consciousness shut down. You now have full control of your host body as if it were your own and your mind is split between your host's brain and your coreself. This makes some other perks redundant since you control both sides of the relationship.",
+          "title": "Administrative Mishap"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "la8y",
+          "image": "",
+          "isActive": false,
+          "isNotSelectable": true,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "col-12",
+          "requireds": [],
+          "scores": [],
+          "template": 1,
+          "text": "",
+          "title": "Drawbacks"
         },
         {
           "addons": [],
@@ -15170,7 +15293,37 @@
           "isVisible": true,
           "multipleUseVariable": 0,
           "objectWidth": "",
-          "requireds": [],
+          "requireds": [
+            {
+              "afterText": "",
+              "beforeText": "Incompatible:",
+              "id": "",
+              "operator": "",
+              "orRequired": [
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                },
+                {
+                  "req": ""
+                }
+              ],
+              "reqId": "26ri",
+              "reqId1": "",
+              "reqId2": "",
+              "reqId3": "",
+              "reqPoints": 0,
+              "required": false,
+              "requireds": [],
+              "showRequired": true,
+              "type": "id"
+            }
+          ],
           "scores": [
             {
               "afterText": "SP",
@@ -46911,7 +47064,7 @@
       "id": "zg2f",
       "image": "",
       "isButtonRow": false,
-      "isEditModeOn": true,
+      "isEditModeOn": false,
       "isInfoRow": false,
       "isPrivateStyling": false,
       "isRequirementOpen": false,
@@ -47857,7 +48010,7 @@
             }
           ],
           "template": 1,
-          "text": "You have Eidolon's powers without the worthy opponent issue. You can have three somewhat-random powers that you can change at any time you want. These powers can be very powerful. You can switch out quality for quantity and have five weaker powers instead of three stronger ones. All powers take a couple of minutes to build up strength,though they're still usable before reaching full strength. You can still run out of energy with this power. You're a precognitive blindspot to everyone but the entity. Negentropy increases your slot limit by 1 strong power or 2 weaker powers.",
+          "text": "You have Eidolon's powers without the worthy opponent issue. You can have three somewhat-random powers that you can change at any time you want. These powers can be very powerful. You can switch out quality for quantity and have five weaker powers instead of three stronger ones. All powers take a couple of minutes to build up strength, though they're still usable before reaching full strength. You can still run out of energy with this power. You're a precognitive blindspot to everyone but the entity.\n\nNegentropy increases your slots to five strong or nine weaker powers.",
           "title": "(Trump) Eidolon"
         },
         {
@@ -54949,7 +55102,7 @@
       "id": "qldk",
       "image": "",
       "isButtonRow": false,
-      "isEditModeOn": true,
+      "isEditModeOn": false,
       "isInfoRow": false,
       "isPrivateStyling": false,
       "isRequirementOpen": false,
