@@ -55048,7 +55048,7 @@
             }
           ],
           "template": 1,
-          "text": "You have access to every Tinker technology tree as well as understood technology dating back to the dawn of civilization(s). The closer to understood technology your inventions are the less black-boxed they are. This limit can be raised if you study and analyze your own technology or if a technology you created is reverse engineered and understood by scientists.\n\n<i>Note: Even if you build a replicator the created items will still be black-boxed and need maintenance.</i>\n\n<i>Note: Technology levels, your base technology level is based at least on 2010 technology and cannot lower if you are in a world with a more primitive understanding.</i>",
+          "text": "You have access to every Tinker technology tree as well as understood technology dating back to the dawn of civilization(s). The closer to understood technology your inventions are the less black-boxed they are. This limit can be raised if you study and analyze your own technology or if a technology you created is reverse engineered and understood by scientists.\n\nYou can have 3 method specializations (modular, efficiency, etc) at once, 5 broad specializations (lasers, waves, code, vehicles, etc.) at once, and 9 narrow specializations (clockwork automata, personal equipment, prosthetics, surveillance, etc.). It takes a minute to switch between specializations.\n\n<i>Note: Even if you build a replicator the created items will still be black-boxed and need maintenance.</i>\n\n<i>Note: Technology levels, your base technology level is based at least on 2010 technology and cannot lower if you are in a world with a more primitive understanding.</i>",
           "title": "(Tinker) Revolution"
         },
         {
