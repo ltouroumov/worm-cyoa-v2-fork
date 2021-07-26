@@ -51318,7 +51318,7 @@
       "id": "wy6p",
       "image": "",
       "isButtonRow": false,
-      "isEditModeOn": false,
+      "isEditModeOn": true,
       "isInfoRow": false,
       "isPrivateStyling": false,
       "isRequirementOpen": false,
@@ -51335,7 +51335,7 @@
           "isActive": false,
           "isVisible": true,
           "multipleUseVariable": 0,
-          "objectWidth": "col-md-4",
+          "objectWidth": "",
           "requireds": [],
           "scores": [
             {
@@ -51363,7 +51363,7 @@
           "isActive": false,
           "isVisible": true,
           "multipleUseVariable": 0,
-          "objectWidth": "col-md-4",
+          "objectWidth": "",
           "requireds": [],
           "scores": [
             {
@@ -51391,7 +51391,7 @@
           "isActive": false,
           "isVisible": true,
           "multipleUseVariable": 0,
-          "objectWidth": "col-md-4",
+          "objectWidth": "",
           "requireds": [],
           "scores": [
             {
@@ -51550,6 +51550,34 @@
           "template": 1,
           "text": "You can summon Tinkertech dolls build with the available specializations. It takes significantly more time to design a pattern than for a normal doll. At their core, the dolls have a component that allows you to control them with your power, if it is destroyed the doll will stop working. You can repair a Tinker doll while it's inactive.",
           "title": "Internals"
+        },
+        {
+          "addons": [],
+          "defaultAspectHeight": 1,
+          "defaultAspectWidth": 1,
+          "groups": [],
+          "id": "u1v6",
+          "image": "",
+          "isActive": false,
+          "isVisible": true,
+          "multipleUseVariable": 0,
+          "objectWidth": "",
+          "requireds": [],
+          "scores": [
+            {
+              "afterText": "DP",
+              "beforeText": "Cost:",
+              "id": "d2",
+              "isActive": false,
+              "requireds": [],
+              "showScore": true,
+              "type": "",
+              "value": "3"
+            }
+          ],
+          "template": 1,
+          "text": "Your dolls can have any power your have.\nPowers that alter the user's biology don't work on the dolls.",
+          "title": "Power Sharing"
         },
         {
           "addons": [],
